@@ -1,0 +1,20 @@
+{
+  "name": "msc-daisyui-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss --input ./src/input.css --output ./dist/output.css --watch",
+    "build": "tailwindcss --input ./src/input.css --output ./dist/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^5.0.50",
+    "tailwindcss": "^4.1.12"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12"
+  }
+}
