@@ -1,552 +1,664 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daisy UI | Homepage (Daisy-only)</title>
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="shortcut icon" href="https://www.mscdirect.com/favicon.ico" type="image/x-icon" />
-  </head>
-  <body class="bg-base-200">
-    <!-- Promo Bar -->
-    <div class="alert alert-info rounded-none">
-      <span>
-        Free Ground Shipping on orders over <strong>$99</strong> - Online Only
-        Enter Code <strong>MW99</strong>
-        <a class="link link-primary">Click to Apply</a>
-      </span>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Daisy UI | Homepage (Daisy-only)</title>
+		<link rel="stylesheet" href="dist/output.css" />
+		<link rel="shortcut icon" href="https://www.mscdirect.com/favicon.ico" type="image/x-icon" />
+	</head>
+	<body class="bg-base-200">
+		<!-- Promo Bar -->
+		<div class="alert alert-info rounded-none">
+			<span>
+				Free Ground Shipping on orders over <strong>$99</strong> - Online Only Enter Code <strong>MW99</strong>
+				<a class="link link-primary">Click to Apply</a>
+			</span>
+		</div>
 
-    <main class="max-w-screen-2xl mx-auto p-4 lg:p-6">
-      <!-- Top Categories -->
-      <section class="card bg-base-100 shadow">
-        <div class="card-body">
-          <div class="navbar p-0">
-            <div class="navbar-start">
-              <div>
-                <h2 class="card-title">Top Categories for You</h2>
-                <a class="link link-primary">View All Categories</a>
-              </div>
-            </div>
-            <div class="navbar-end">
-              <div class="btn-group">
-                <a href="#cat-slide-prev" class="btn btn-ghost btn-circle">❮</a>
-                <a href="#cat-slide-next" class="btn btn-ghost btn-circle">❯</a>
-              </div>
-            </div>
-          </div>
+		<main class="max-w-screen-2xl mx-auto p-4 lg:p-6">
+			<!-- Top Categories -->
+			<section class="card bg-base-100 shadow">
+				<div class="card-body">
+					<div class="navbar p-0">
+						<div class="navbar-start">
+							<div>
+								<h2 class="card-title">Top Categories for You</h2>
+								<a class="link link-primary">View All Categories</a>
+							</div>
+						</div>
+						<div class="navbar-end">
+							<div class="btn-group">
+								<a href="#cat-slide-prev" class="btn btn-ghost btn-circle">❮</a>
+								<a href="#cat-slide-next" class="btn btn-ghost btn-circle">❯</a>
+							</div>
+						</div>
+					</div>
 
-          <!-- Categories as a carousel of pill buttons -->
-          <div class="carousel w-full">
-            <div id="cat-slide-prev" class="carousel-item">
-              <button class="btn btn-outline btn-primary btn-sm">Holemaking</button>
-              <button class="btn btn-outline btn-primary btn-sm">Milling</button>
-              <button class="btn btn-outline btn-primary btn-sm">Abrasives</button>
-              <button class="btn btn-outline btn-primary btn-sm">Safety</button>
-              <button class="btn btn-outline btn-primary btn-sm">Indexable Cutting Tools</button>
-              <button class="btn btn-outline btn-primary btn-sm">Threading</button>
-              <button class="btn btn-outline btn-primary btn-sm">Measuring & Inspecting</button>
-              <button class="btn btn-outline btn-primary btn-sm">Hand Tools</button>
-              <button class="btn btn-outline btn-primary btn-sm">Janitorial & Facility Maintenance</button>
-              <button class="btn btn-outline btn-primary btn-sm">Fasteners</button>
-            </div>
-            <div id="cat-slide-next" class="carousel-item">
-              <button class="btn btn-outline btn-primary btn-sm">Threading</button>
-              <button class="btn btn-outline btn-primary btn-sm">Measuring & Inspecting</button>
-              <button class="btn btn-outline btn-primary btn-sm">Hand Tools</button>
-              <button class="btn btn-outline btn-primary btn-sm">Janitorial & Facility Maintenance</button>
-              <button class="btn btn-outline btn-primary btn-sm">Fasteners</button>
-              <button class="btn btn-outline btn-primary btn-sm">Threading</button>
-              <button class="btn btn-outline btn-primary btn-sm">Measuring & Inspecting</button>
-              <button class="btn btn-outline btn-primary btn-sm">Hand Tools</button>
-              <button class="btn btn-outline btn-primary btn-sm">Janitorial & Facility Maintenance</button>
-              <button class="btn btn-outline btn-primary btn-sm">Fasteners</button>
-            </div>
-          </div>
-        </div>
-      </section>
+					<!-- Categories as a carousel of pill buttons -->
+					<div class="carousel w-full">
+						<div id="cat-slide-prev" class="carousel-item">
+							<button class="btn btn-outline btn-primary btn-sm">Holemaking</button>
+							<button class="btn btn-outline btn-primary btn-sm">Milling</button>
+							<button class="btn btn-outline btn-primary btn-sm">Abrasives</button>
+							<button class="btn btn-outline btn-primary btn-sm">Safety</button>
+							<button class="btn btn-outline btn-primary btn-sm">Indexable Cutting Tools</button>
+							<button class="btn btn-outline btn-primary btn-sm">Threading</button>
+							<button class="btn btn-outline btn-primary btn-sm">Measuring & Inspecting</button>
+							<button class="btn btn-outline btn-primary btn-sm">Hand Tools</button>
+							<button class="btn btn-outline btn-primary btn-sm">Janitorial & Facility Maintenance</button>
+							<button class="btn btn-outline btn-primary btn-sm">Fasteners</button>
+						</div>
+						<div id="cat-slide-next" class="carousel-item">
+							<button class="btn btn-outline btn-primary btn-sm">Threading</button>
+							<button class="btn btn-outline btn-primary btn-sm">Measuring & Inspecting</button>
+							<button class="btn btn-outline btn-primary btn-sm">Hand Tools</button>
+							<button class="btn btn-outline btn-primary btn-sm">Janitorial & Facility Maintenance</button>
+							<button class="btn btn-outline btn-primary btn-sm">Fasteners</button>
+							<button class="btn btn-outline btn-primary btn-sm">Threading</button>
+							<button class="btn btn-outline btn-primary btn-sm">Measuring & Inspecting</button>
+							<button class="btn btn-outline btn-primary btn-sm">Hand Tools</button>
+							<button class="btn btn-outline btn-primary btn-sm">Janitorial & Facility Maintenance</button>
+							<button class="btn btn-outline btn-primary btn-sm">Fasteners</button>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- Hero/Promo images -->
-      <section class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="card bg-base-100 image-full shadow">
-          <figure>
-            <picture>
-              <source media="(min-width:768px)" srcset="../assets/homepage/slider-ss-test-a.jpg" />
-              <img src="../assets/homepage/slider-ss-test-dd.jpg" alt="Copy test image" />
-            </picture>
-          </figure>
-          <div class="card-body"></div>
-        </div>
-        <div class="card bg-base-100 image-full shadow">
-          <figure>
-            <picture>
-              <source media="(min-width:768px)" srcset="../assets/homepage/slider-ss-test-b.jpg" />
-              <img src="../assets/homepage/slider-ss-test-c.jpg" alt="Copy test image" />
-            </picture>
-          </figure>
-          <div class="card-body"></div>
-        </div>
-      </section>
+			<!-- Hero/Promo images -->
+			<section class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="card bg-base-100 image-full shadow">
+					<figure>
+						<picture>
+							<source media="(min-width:768px)" srcset="../assets/homepage/slider-ss-test-a.jpg" />
+							<img src="../assets/homepage/slider-ss-test-dd.jpg" alt="Copy test image" />
+						</picture>
+					</figure>
+					<div class="card-body"></div>
+				</div>
+				<div class="card bg-base-100 image-full shadow">
+					<figure>
+						<picture>
+							<source media="(min-width:768px)" srcset="../assets/homepage/slider-ss-test-b.jpg" />
+							<img src="../assets/homepage/slider-ss-test-c.jpg" alt="Copy test image" />
+						</picture>
+					</figure>
+					<div class="card-body"></div>
+				</div>
+			</section>
 
-      <!-- Recently Viewed -->
-      <section class="mt-6 card bg-base-100 shadow">
-        <div class="card-body">
-          <h3 class="card-title">Recently Viewed</h3>
-          <div class="divider"></div>
+			<!-- Recently Viewed -->
+			<section class="mt-6 card bg-base-100 shadow">
+				<div class="card-body">
+					<h3 class="card-title">Recently Viewed</h3>
+					<div class="divider"></div>
 
-          <div class="carousel w-full">
-            <!-- Item Card 1 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/drill.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
+					<div class="carousel w-full">
+						<!-- Item Card 1 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/drill.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
 
-                  <div class="join">
-                    <label class="label">
-                      <span class="label-text">Qty</span>
-                    </label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="join">
+										<label class="label">
+											<span class="label-text">Qty</span>
+										</label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 2 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/gloves.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
+						<!-- Item Card 2 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/gloves.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
 
-                  <div class="join">
-                    <label class="label">
-                      <span class="label-text">Qty</span>
-                    </label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="join">
+										<label class="label">
+											<span class="label-text">Qty</span>
+										</label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 3 (with select) -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/battery.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
+						<!-- Item Card 3 (with select) -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/battery.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
 
-                  <div class="join">
-                    <label class="label">
-                      <span class="label-text">Qty</span>
-                    </label>
-                    <select class="select select-bordered">
-                      <option>1</option>
-                      <option>5</option>
-                      <option>10</option>
-                      <option>15</option>
-                      <option>20</option>
-                    </select>
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="join">
+										<label class="label">
+											<span class="label-text">Qty</span>
+										</label>
+										<select class="select select-bordered">
+											<option>1</option>
+											<option>5</option>
+											<option>10</option>
+											<option>15</option>
+											<option>20</option>
+										</select>
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 4 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/ac.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
+						<!-- Item Card 4 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/ac.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
 
-                  <div class="join">
-                    <label class="label">
-                      <span class="label-text">Qty</span>
-                    </label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="join">
+										<label class="label">
+											<span class="label-text">Qty</span>
+										</label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 5 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/compresor.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
+						<!-- Item Card 5 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/compresor.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
 
-                  <div class="join">
-                    <label class="label">
-                      <span class="label-text">Qty</span>
-                    </label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="join">
+										<label class="label">
+											<span class="label-text">Qty</span>
+										</label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 6 (with select) -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/battery2.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
+						<!-- Item Card 6 (with select) -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/battery2.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
 
-                  <div class="join">
-                    <label class="label">
-                      <span class="label-text">Qty</span>
-                    </label>
-                    <select class="select select-bordered">
-                      <option>1</option>
-                      <option>5</option>
-                      <option>10</option>
-                      <option>15</option>
-                      <option>20</option>
-                    </select>
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+									<div class="join">
+										<label class="label">
+											<span class="label-text">Qty</span>
+										</label>
+										<select class="select select-bordered">
+											<option>1</option>
+											<option>5</option>
+											<option>10</option>
+											<option>15</option>
+											<option>20</option>
+										</select>
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- You can duplicate more cards as needed to mirror the original list -->
-          </div>
-        </div>
-      </section>
+						<!-- You can duplicate more cards as needed to mirror the original list -->
+					</div>
+				</div>
+			</section>
 
-      <!-- Best Sellers -->
-      <section class="mt-6 card bg-base-100 shadow">
-        <div class="card-body">
-          <h3 class="card-title">Best Sellers</h3>
-          <div class="divider"></div>
+			<!-- Best Sellers -->
+			<section class="mt-6 card bg-base-100 shadow">
+				<div class="card-body">
+					<h3 class="card-title">Best Sellers</h3>
+					<div class="divider"></div>
 
-          <div class="carousel w-full">
-            <!-- Item Card 1 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/drill.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
-                  <div class="join">
-                    <label class="label"><span class="label-text">Qty</span></label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+					<div class="carousel w-full">
+						<!-- Item Card 1 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/drill.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
+									<div class="join">
+										<label class="label"><span class="label-text">Qty</span></label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 2 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/gloves.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
-                  <div class="join">
-                    <label class="label"><span class="label-text">Qty</span></label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+						<!-- Item Card 2 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/gloves.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
+									<div class="join">
+										<label class="label"><span class="label-text">Qty</span></label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 3 (with select) -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/battery.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
-                  <div class="join">
-                    <label class="label"><span class="label-text">Qty</span></label>
-                    <select class="select select-bordered">
-                      <option>1</option>
-                      <option>5</option>
-                      <option>10</option>
-                      <option>15</option>
-                      <option>20</option>
-                    </select>
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+						<!-- Item Card 3 (with select) -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/battery.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
+									<div class="join">
+										<label class="label"><span class="label-text">Qty</span></label>
+										<select class="select select-bordered">
+											<option>1</option>
+											<option>5</option>
+											<option>10</option>
+											<option>15</option>
+											<option>20</option>
+										</select>
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <!-- Item Card 4 -->
-            <div class="carousel-item">
-              <div class="card card-bordered bg-base-100">
-                <div class="card-body">
-                  <figure>
-                    <img src="../assets/homepage/ac.png" alt="Product Image" />
-                  </figure>
-                  <p>Web Price</p>
-                  <p><span>$293.17</span><span> /ea</span></p>
-                  <p>DEWALT</p>
-                  <p>Power Tool Battery: 20V, Lithium-ion</p>
-                  <p>MSC# 73659377</p>
-                  <div class="join">
-                    <label class="label"><span class="label-text">Qty</span></label>
-                    <input type="text" value="1" inputmode="numeric" class="input input-bordered" />
-                    <button class="btn btn-primary join-item">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+						<!-- Item Card 4 -->
+						<div class="carousel-item">
+							<div class="card card-bordered bg-base-100">
+								<div class="card-body">
+									<figure>
+										<img src="../assets/homepage/ac.png" alt="Product Image" />
+									</figure>
+									<p>Web Price</p>
+									<p><span>$293.17</span><span> /ea</span></p>
+									<p>DEWALT</p>
+									<p>Power Tool Battery: 20V, Lithium-ion</p>
+									<p>MSC# 73659377</p>
+									<div class="join">
+										<label class="label"><span class="label-text">Qty</span></label>
+										<input type="text" value="1" inputmode="numeric" class="input input-bordered" />
+										<button class="btn btn-primary join-item">Add to Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- Browse Our Categories -->
-      <section class="bg-base-100 rounded-box mt-6">
-        <div class="max-w-screen-2xl mx-auto px-5 lg:px-6">
-          <div class="navbar p-0">
-            <div class="navbar-start">
-              <h2 class="card-title">Browse Our Categories</h2>
-            </div>
-            <div class="navbar-end">
-              <a class="btn btn-outline btn-primary">View All Categories</a>
-            </div>
-          </div>
+			<!-- Browse Our Categories -->
+			<section class="bg-base-100 rounded-box mt-6">
+				<div class="max-w-screen-2xl mx-auto px-5 lg:px-6">
+					<div class="navbar p-0">
+						<div class="navbar-start">
+							<h2 class="card-title">Browse Our Categories</h2>
+						</div>
+						<div class="navbar-end">
+							<a class="btn btn-outline btn-primary">View All Categories</a>
+						</div>
+					</div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[1px] bg-base-200 rounded mt-4">
-            <!-- Category cards -->
-            <div class="card bg-base-100 rounded-none">
-              <div class="card-body items-center text-center">
-                <figure><img src="../assets/homepage/milling.jpg" alt="Milling" /></figure>
-                <span class="font-bold">Milling</span>
-              </div>
-            </div>
-            <div class="card bg-base-100 rounded-none">
-              <div class="card-body items-center text-center">
-                <figure><img src="../assets/homepage/hole-making.png" alt="Hole Making" /></figure>
-                <span class="font-bold">Hole Making</span>
-              </div>
-            </div>
-            <div class="card bg-base-100 rounded-none">
-              <div class="card-body items-center text-center">
-                <figure><img src="../assets/homepage/safety.png" alt="Safety" /></figure>
-                <span class="font-bold">Safety</span>
-              </div>
-            </div>
-            <div class="card bg-base-100 rounded-none">
-              <div class="card-body items-center text-center">
-                <figure><img src="../assets/homepage/abrasives.png" alt="Abrasives" /></figure>
-                <span class="font-bold">Abrasives</span>
-              </div>
-            </div>
-            <div class="card bg-base-100 rounded-none">
-              <div class="card-body items-center text-center">
-                <figure><img src="../assets/homepage/indexable.png" alt="Indexable Cutting Tools" /></figure>
-                <span class="font-bold">Indexable Cutting Tools</span>
-              </div>
-            </div>
-            <div class="card bg-base-100 rounded-none">
-              <div class="card-body items-center text-center">
-                <figure><img src="../assets/homepage/power-tools.png" alt="Power Tools" /></figure>
-                <span class="font-bold">Power Tools</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+					<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[1px] bg-base-200 rounded mt-4">
+						<!-- Category cards -->
+						<div class="card bg-base-100 rounded-none">
+							<div class="card-body items-center text-center">
+								<figure><img src="../assets/homepage/milling.jpg" alt="Milling" /></figure>
+								<span class="font-bold">Milling</span>
+							</div>
+						</div>
+						<div class="card bg-base-100 rounded-none">
+							<div class="card-body items-center text-center">
+								<figure><img src="../assets/homepage/hole-making.png" alt="Hole Making" /></figure>
+								<span class="font-bold">Hole Making</span>
+							</div>
+						</div>
+						<div class="card bg-base-100 rounded-none">
+							<div class="card-body items-center text-center">
+								<figure><img src="../assets/homepage/safety.png" alt="Safety" /></figure>
+								<span class="font-bold">Safety</span>
+							</div>
+						</div>
+						<div class="card bg-base-100 rounded-none">
+							<div class="card-body items-center text-center">
+								<figure><img src="../assets/homepage/abrasives.png" alt="Abrasives" /></figure>
+								<span class="font-bold">Abrasives</span>
+							</div>
+						</div>
+						<div class="card bg-base-100 rounded-none">
+							<div class="card-body items-center text-center">
+								<figure><img src="../assets/homepage/indexable.png" alt="Indexable Cutting Tools" /></figure>
+								<span class="font-bold">Indexable Cutting Tools</span>
+							</div>
+						</div>
+						<div class="card bg-base-100 rounded-none">
+							<div class="card-body items-center text-center">
+								<figure><img src="../assets/homepage/power-tools.png" alt="Power Tools" /></figure>
+								<span class="font-bold">Power Tools</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- Services Designed For Your Business Needs -->
-      <section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
-        <div class="divider">
-          <h2 class="font-bold text-xl">Services Designed For Your Business Needs</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/procurement.jpg" alt="eProcurement" class="object-cover w-full h-full" /></figure>
-            <div class="card-body">
-              <h3 class="card-title">eProcurement</h3>
-              <div class="card-actions justify-end">
-                <button class="btn btn-outline btn-primary">Learn More</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/inventory-management.jpg" alt="Inventory Management" class="object-cover w-full h-full" /></figure>
-            <div class="card-body">
-              <h3 class="card-title">Inventory Management</h3>
-              <div class="card-actions justify-end">
-                <button class="btn btn-outline btn-primary">Learn More</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/safety-service.jpg" alt="Safety Service" class="object-cover w-full h-full" /></figure>
-            <div class="card-body">
-              <h3 class="card-title">Safety Service</h3>
-              <div class="card-actions justify-end">
-                <button class="btn btn-outline btn-primary">Learn More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+			<!-- Services Designed For Your Business Needs -->
+			<section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
+				<div class="divider">
+					<h2 class="font-bold text-xl">Services Designed For Your Business Needs</h2>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img src="../assets/homepage/procurement.jpg" alt="eProcurement" class="object-cover w-full h-full" />
+						</figure>
+						<div class="card-body">
+							<h3 class="card-title">eProcurement</h3>
+							<div class="card-actions justify-end">
+								<button class="btn btn-outline btn-primary">Learn More</button>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img
+								src="../assets/homepage/inventory-management.jpg"
+								alt="Inventory Management"
+								class="object-cover w-full h-full"
+							/>
+						</figure>
+						<div class="card-body">
+							<h3 class="card-title">Inventory Management</h3>
+							<div class="card-actions justify-end">
+								<button class="btn btn-outline btn-primary">Learn More</button>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img
+								src="../assets/homepage/safety-service.jpg"
+								alt="Safety Service"
+								class="object-cover w-full h-full"
+							/>
+						</figure>
+						<div class="card-body">
+							<h3 class="card-title">Safety Service</h3>
+							<div class="card-actions justify-end">
+								<button class="btn btn-outline btn-primary">Learn More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- Help Callout -->
-      <section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
-        <div class="alert alert-info">
-          <span>
-            Have a Question? We’re here to help — Call
-            <a class="link link-primary">1-800-645-7270</a>
-            or Email
-            <a class="link link-primary" href="mailto:support@mscdirect.com">support@mscdirect.com</a>
-          </span>
-        </div>
-      </section>
+			<!-- Help Callout -->
+			<section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
+				<div class="alert alert-info">
+					<span>
+						Have a Question? We’re here to help — Call
+						<a class="link link-primary">1-800-645-7270</a>
+						or Email
+						<a class="link link-primary" href="mailto:support@mscdirect.com">support@mscdirect.com</a>
+					</span>
+				</div>
+			</section>
 
-      <!-- Promo Feature Cards -->
-      <section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="card bg-base-100 shadow lg:card-side">
-            <div class="card-body order-2 lg:order-1">
-              <b>Save with our sales flyers</b>
-              <p>This body copy area can support up to 108 cc max including spaces and the text can wrap to container.</p>
-              <div class="card-actions">
-                <button class="btn btn-outline btn-primary">Shop Clearance</button>
-              </div>
-            </div>
-            <figure class="order-1 lg:order-2 lg:w-1/2">
-              <img src="../assets/homepage/save-our-sales.jpg" alt="Save with our sales flyers" class="w-full h-full object-cover" />
-            </figure>
-          </div>
+			<!-- Promo Feature Cards -->
+			<section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<div class="card bg-base-100 shadow lg:card-side">
+						<div class="card-body order-2 lg:order-1">
+							<b>Save with our sales flyers</b>
+							<p>
+								This body copy area can support up to 108 cc max including spaces and the text can wrap to container.
+							</p>
+							<div class="card-actions">
+								<button class="btn btn-outline btn-primary">Shop Clearance</button>
+							</div>
+						</div>
+						<figure class="order-1 lg:order-2 lg:w-1/2">
+							<img
+								src="../assets/homepage/save-our-sales.jpg"
+								alt="Save with our sales flyers"
+								class="w-full h-full object-cover"
+							/>
+						</figure>
+					</div>
 
-          <div class="card bg-base-100 shadow lg:card-side">
-            <figure class="lg:w-1/2">
-              <img src="../assets/homepage/exclusive-brand.jpg" alt="Exclusive Brands Clearance" class="w-full h-full object-cover" />
-            </figure>
-            <div class="card-body lg:w-1/2">
-              <b>Exclusive Brands Clearance</b>
-              <p>Save up to 40% on calipers & micrometers</p>
-              <div class="card-actions mt-auto">
-                <button class="btn btn-outline btn-primary">Shop Clearance</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+					<div class="card bg-base-100 shadow lg:card-side">
+						<figure class="lg:w-1/2">
+							<img
+								src="../assets/homepage/exclusive-brand.jpg"
+								alt="Exclusive Brands Clearance"
+								class="w-full h-full object-cover"
+							/>
+						</figure>
+						<div class="card-body lg:w-1/2">
+							<b>Exclusive Brands Clearance</b>
+							<p>Save up to 40% on calipers & micrometers</p>
+							<div class="card-actions mt-auto">
+								<button class="btn btn-outline btn-primary">Shop Clearance</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- Four-tile Promo Grid -->
-      <section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/two-ine.jpg" alt="" class="w-full h-full object-cover" /></figure>
-            <div class="card-body">
-              <p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
-              <div class="card-actions">
-                <button class="btn btn-outline btn-primary">Shop Clearance</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/rigid.jpg" alt="" class="w-full h-full object-cover" /></figure>
-            <div class="card-body">
-              <p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
-              <div class="card-actions">
-                <button class="btn btn-outline btn-primary">Shop Clearance</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/gloves.jpg" alt="" class="w-full h-full object-cover" /></figure>
-            <div class="card-body">
-              <p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
-              <div class="card-actions">
-                <button class="btn btn-outline btn-primary">Shop Clearance</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-base-100 shadow">
-            <figure class="h-40"><img src="../assets/homepage/dactory.jpg" alt="" class="w-full h-full object-cover" /></figure>
-            <div class="card-body">
-              <p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
-              <div class="card-actions">
-                <button class="btn btn-outline btn-primary">Shop Clearance</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+			<!-- Four-tile Promo Grid -->
+			<section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img src="../assets/homepage/two-ine.jpg" alt="" class="w-full h-full object-cover" />
+						</figure>
+						<div class="card-body">
+							<p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
+							<div class="card-actions">
+								<button class="btn btn-outline btn-primary">Shop Clearance</button>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img src="../assets/homepage/rigid.jpg" alt="" class="w-full h-full object-cover" />
+						</figure>
+						<div class="card-body">
+							<p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
+							<div class="card-actions">
+								<button class="btn btn-outline btn-primary">Shop Clearance</button>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img src="../assets/homepage/gloves.jpg" alt="" class="w-full h-full object-cover" />
+						</figure>
+						<div class="card-body">
+							<p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
+							<div class="card-actions">
+								<button class="btn btn-outline btn-primary">Shop Clearance</button>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-base-100 shadow">
+						<figure class="h-40">
+							<img src="../assets/homepage/dactory.jpg" alt="" class="w-full h-full object-cover" />
+						</figure>
+						<div class="card-body">
+							<p class="font-bold">This is a Line Can Take up to 48CC Max or 2 line</p>
+							<div class="card-actions">
+								<button class="btn btn-outline btn-primary">Shop Clearance</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <!-- MSC Description -->
-      <section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
-        <div class="card bg-base-100 shadow">
-          <div class="card-body">
-            <h3 class="card-title">MSC Industrial Supply Co.</h3>
-            <p>
-              MSC Industrial Supply, Inc. is a leading North American distributor of metalworking and
-              <a class="link">maintenance</a>, repair and operations <a class="link">(MRO) products</a> and services. With over 75 years of experience, MSC is dedicated to helping customers drive greater productivity, profitability and growth. MSC features over 1.5 million products ready-to-ship. Our inventory management and other supply chain solutions ensure that your workforce and facility are supplied with equipment that is reliable, durable and accurate for every operation.
-            </p>
-            <p>
-              We are your steadfast partner in providing innovative solutions that deliver. That includes our knowledgeable customer service associates who strive to ensure that every customer is provided with the best possible shopping experience - first time, every time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </body>
+			<!-- MSC Description -->
+			<section class="mt-6 max-w-screen-2xl mx-auto px-5 lg:px-6">
+				<div class="card bg-base-100 shadow">
+					<div class="card-body">
+						<h3 class="card-title">MSC Industrial Supply Co.</h3>
+						<p>
+							MSC Industrial Supply, Inc. is a leading North American distributor of metalworking and
+							<a class="link">maintenance</a>, repair and operations <a class="link">(MRO) products</a> and services.
+							With over 75 years of experience, MSC is dedicated to helping customers drive greater productivity,
+							profitability and growth. MSC features over 1.5 million products ready-to-ship. Our inventory management
+							and other supply chain solutions ensure that your workforce and facility are supplied with equipment that
+							is reliable, durable and accurate for every operation.
+						</p>
+						<p>
+							We are your steadfast partner in providing innovative solutions that deliver. That includes our
+							knowledgeable customer service associates who strive to ensure that every customer is provided with the
+							best possible shopping experience - first time, every time.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer sm:footer-horizontal bg-white p-10">
+			<nav>
+				<h6 class="footer-title">Company Information</h6>
+				<a class="link link-hover">Event</a>
+				<a class="link link-hover">Press Releases</a>
+				<a class="link link-hover">Investor Relations</a>
+				<a class="link link-hover">Corporate Social Responsability</a>
+				<a class="link link-hover">Career Opportunities</a>
+				<a class="link link-hover">Suppliers</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<h6 class="footer-title">Order Center</h6>
+				<a class="link link-hover">My Account</a>
+				<a class="link link-hover">Shipping Options</a>
+				<a class="link link-hover">Request a Quote</a>
+				<a class="link link-hover">SDS & Regulatory Documents</a>
+				<a class="link link-hover">Invoicing & Credit</a>
+				<a class="link link-hover">Sales Tax Exemption Form</a>
+				<a class="link link-hover">Return Policy</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<h6 class="footer-title">More Ways to Shop</h6>
+				<a class="link link-hover">Catalogs</a>
+				<a class="link link-hover">Big Book</a>
+				<a class="link link-hover">Safety Guidebook</a>
+				<a class="link link-hover">Heat Stress</a>
+				<a class="link link-hover">Emergency Prep</a>
+				<a class="link link-hover">Rebates</a>
+				<a class="link link-hover">Become a Wholesaler</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<h6 class="footer-title">How Can We Help?</h6>
+				<a class="link link-hover">Call Us 1-800-645-7270</a>
+				<a class="link link-hover">Give Feedback</a>
+				<a class="link link-hover">Chat</a>
+				<a class="link link-hover">Email</a>
+				<a class="link link-hover">MSC Locations</a>
+				<a class="link link-hover">FAQs</a>
+				<a class="link link-hover">Help & Support</a>
+				<a class="link link-hover">Contact Us</a>
+			</nav>
+		</footer>
+		<div class="divider divider-end bg-white m-0 divider-primary"></div>
+		<div class="flex justify-center gap-15 bg-white py-5">
+			<button class="btn btn-outline btn-primary">Suscribe for Deals</button
+			><button class="btn btn-outline btn-primary">Give Feedback</button>
+		</div>
+		<div class="divider divider-end bg-white m-0 divider-primary"></div>
+		<footer class="footer sm:footer-horizontal bg-white p-10">
+			<nav>
+				<a class="link link-hover">Website Terms of Use</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<a class="link link-hover">Terms and Conditions of Sale</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<a class="link link-hover">Privacy Policy</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<a class="link link-hover">Modern Slavery Act </a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<a class="link link-hover">All Rights Reserved</a>
+			</nav>
+			<div class="divider divider-horizontal divider-end divider-primary"></div>
+			<nav>
+				<a class="link link-hover">© 2000 - 2025 MSC Industrial Direct Co., Inc.</a>
+			</nav>
+		</footer>
+	</body>
 </html>
