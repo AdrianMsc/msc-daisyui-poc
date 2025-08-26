@@ -34,7 +34,7 @@
       </div>
 
       <!-- DROP DOWN -->
-      <div class="dropdown dropdown-hover">
+      <div class="dropdown dropdown-hover hidden lg:block">
         <div tabindex="0" role="button" class="btn m-1">
           Shop All Products
           <svg
@@ -57,7 +57,7 @@
       </div>
 
       <!-- SEARCH BAR -->
-      <div class="form-control w-full max-w-xs mr-2">
+      <div class="form-control w-full max-w-xs mr-2 hidden lg:flex">
         <input
           type="text"
           placeholder="Serach for products..."
@@ -66,7 +66,7 @@
       </div>
 
       <!-- ICONOS DERECHA -->
-      <div class="flex-none gap-4">
+      <div class="flex-none gap-4 hidden lg:flex">
         <!-- CARRITO -->
         <div class="dropdown dropdown-end">
           <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -109,6 +109,46 @@
             </li>
             <li><a>Configuración</a></li>
             <li><a>Salir</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navbar-end lg:hidden">
+        <button class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+        <!-- DROP DOWN -->
+        <div class="dropdown dropdown-hover">
+          <div tabindex="0" role="button" class="btn m-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              class="w-[14px]"
+            >
+              <path
+                d="M465.4 192L431.1 144L209 144L174.7 192L465.4 192zM96 212.5C96 199.2 100.2 186.2 107.9 175.3L156.9 106.8C168.9 90 188.3 80 208.9 80L431 80C451.7 80 471.1 90 483.1 106.8L532 175.3C539.8 186.2 543.9 199.2 543.9 212.5L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 212.5z"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+          >
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
           </ul>
         </div>
       </div>

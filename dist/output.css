@@ -1395,6 +1395,11 @@
       flex-grow: 1;
     }
   }
+  .navbar-center {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
   .carousel {
     display: inline-flex;
     overflow-x: scroll;
@@ -1964,6 +1969,11 @@
     font-size: 0.75rem;
     padding-inline: calc(0.25rem * 2.5 - var(--border));
   }
+  .badge-xs {
+    --size: calc(var(--size-selector, 0.25rem) * 4);
+    font-size: 0.625rem;
+    padding-inline: calc(0.25rem * 2 - var(--border));
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -2109,6 +2119,25 @@
   .normal-case {
     text-transform: none;
   }
+  .btn-link {
+    text-decoration-line: underline;
+    outline-color: currentColor;
+    --btn-border: #0000;
+    --btn-bg: #0000;
+    --btn-fg: var(--color-primary);
+    --btn-noise: none;
+    --btn-shadow: "";
+    &:is(.btn-active, :hover, :active:focus, :focus-visible) {
+      text-decoration-line: underline;
+      --btn-border: #0000;
+      --btn-bg: #0000;
+    }
+    @media (hover: none) {
+      &:hover:not(.btn-active, :active, :focus-visible, :disabled, [disabled], .btn-disabled) {
+        text-decoration-line: none;
+      }
+    }
+  }
   .link-hover {
     text-decoration-line: none;
     &:hover {
@@ -2225,6 +2254,10 @@
     --fontsize: 0.75rem;
     --btn-p: 0.75rem;
     --size: calc(var(--size-field, 0.25rem) * 8);
+  }
+  .badge-primary {
+    --badge-color: var(--color-primary);
+    --badge-fg: var(--color-primary-content);
   }
   .btn-primary {
     --btn-color: var(--color-primary);
@@ -2571,9 +2604,19 @@
       margin-left: auto;
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:inline-block {
