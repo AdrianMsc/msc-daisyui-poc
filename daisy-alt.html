@@ -15,7 +15,7 @@
     <header class="navbar bg-base-100 shadow-md px-4">
       <!-- LOGO -->
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">
+        <a href="#">
           <svg
             width="88"
             height="24"
@@ -34,69 +34,360 @@
       </div>
 
       <!-- DROP DOWN -->
+      <!-- <ul class="menu menu-horizontal px-1">
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Shop All Products</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Solutions</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Resources</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Special Offers</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Catalogs</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Better MRO</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul> -->
+
       <ul class="menu menu-horizontal px-1">
         <li>
-          <details>
-            <summary>Shop All Products</summary>
-            <ul class="p-2">
-              <li><a>Products</a></li>
-              <li><a>Products 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Solutions</summary>
-            <ul class="p-2">
-              <li><a>Products</a></li>
-              <li><a>Products 2</a></li>
-            </ul>
-          </details>
+          <div class="dropdown dropdown-hover">
+            <!-- botón / label -->
+            <label tabindex="0">Shop All Products</label>
+
+            <!-- mega menú -->
+            <div
+              tabindex="0"
+              class="dropdown-content bg-base-100 shadow-xl rounded-box mt-1 w-screen max-w-6xl p-4"
+            >
+              <!-- línea superior azul -->
+              <div class="border-b-2 border-blue-600 mb-4"></div>
+
+              <!-- GRID DE CATEGORÍAS -->
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 max-h-[70vh] overflow-y-auto"
+              >
+                <!-- Columna 1 -->
+                <ul class="menu bg-base-100 rounded-box">
+                  <li>
+                    <a href="/ProductsHomeView">All Product Categories</a>
+                  </li>
+                  <li>
+                    <a href="/browse/Abrasives?navid=2100008">Abrasives</a>
+                  </li>
+                  <li>
+                    <a
+                      href="/browse/Clamping-Workholding-Positioning?navid=2108152"
+                      >Clamping, Workholding & Positioning</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Fasteners?navid=2108705">Fasteners</a>
+                  </li>
+                  <li>
+                    <a href="/browse/Fleet-Maintenance?navid=2103521"
+                      >Fleet Maintenance</a
+                    >
+                  </li>
+                  <li><a href="/browse/HVAC?navid=2104085">HVAC</a></li>
+                  <li>
+                    <a href="/browse/Hand-Tools?navid=2102364">Hand Tools</a>
+                  </li>
+                  <li><a href="/browse/Hardware?navid=2103522">Hardware</a></li>
+                  <li>
+                    <a href="/browse/Holemaking?navid=2106067">Holemaking</a>
+                  </li>
+                </ul>
+
+                <!-- Columna 2 -->
+                <ul class="menu bg-base-100 rounded-box">
+                  <li>
+                    <a href="/browse/Hose-Tube-Fittings-Valves?navid=2104084"
+                      >Hose, Tube, Fittings & Valves</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Indexable-Cutting-Tools?navid=2107070"
+                      >Indexable Cutting Tools</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/browse/Janitorial-Facility-Maintenance?navid=2106462"
+                      >Janitorial & Facility Maintenance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Lighting-Electrical?navid=2109056"
+                      >Lighting & Electrical</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Lubricants-Coolants-Fluids?navid=2107390"
+                      >Lubricants, Coolants & Fluids</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Machinery?navid=2107502">Machinery</a>
+                  </li>
+                  <li>
+                    <a href="/browse/Marking-Labeling?navid=2103523"
+                      >Marking & Labeling</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Material-Handling-Storage?navid=2105165"
+                      >Material Handling & Storage</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Measuring-Inspecting?navid=2107563"
+                      >Measuring & Inspecting</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Columna 3 -->
+                <ul class="menu bg-base-100 rounded-box">
+                  <li><a href="/browse/Milling?navid=2106224">Milling</a></li>
+                  <li>
+                    <a href="/browse/Motion-Control-Fluid-Power?navid=2104087"
+                      >Motion Control & Fluid Power</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Plumbing-Pumps-Filtration?navid=2104086"
+                      >Plumbing, Pumps & Filtration</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Power-Tools?navid=2107244">Power Tools</a>
+                  </li>
+                  <li>
+                    <a href="/browse/Raw-Materials?navid=2101662"
+                      >Raw Materials</a
+                    >
+                  </li>
+                  <li><a href="/browse/Safety?navid=2106309">Safety</a></li>
+                  <li>
+                    <a href="/browse/Saw-Blades?navid=2105933">Saw Blades</a>
+                  </li>
+                  <li>
+                    <a href="/browse/Shipping-Office-Supplies?navid=2104088"
+                      >Shipping & Office Supplies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Tapes-Adhesives?navid=2108682"
+                      >Tapes & Adhesives</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Columna 4 -->
+                <ul class="menu bg-base-100 rounded-box">
+                  <li>
+                    <a href="/browse/Threading?navid=2105963">Threading</a>
+                  </li>
+                  <li>
+                    <a href="/browse/Tool-Holding?navid=2108494"
+                      >Tool Holding</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Turning-Boring?navid=2105881"
+                      >Turning & Boring</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/browse/Welding-Soldering?navid=2100524"
+                      >Welding & Soldering</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Sección inferior con iconos -->
+              <div
+                class="mt-4 grid grid-cols-2 md:flex gap-4 border-t pt-4 bg-gray-100 p-4 rounded-b-xl"
+              >
+                <a href="/r/clearance-specials" class="flex items-center gap-2">
+                  <i class="fa fa-tag text-primary"></i> Clearance
+                </a>
+                <a
+                  href="/corporate/industrial-suppliers-line-card"
+                  class="flex items-center gap-2"
+                >
+                  <img
+                    src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-book.svg"
+                    class="w-4 h-4"
+                  />
+                  All Brands
+                </a>
+                <a href="/products/new-items" class="flex items-center gap-2">
+                  <span class="text-xs bg-blue-600 text-white px-1 rounded"
+                    >NEW</span
+                  >
+                  Products
+                </a>
+                <a
+                  href="/products/exclusive-brands"
+                  class="flex items-center gap-2"
+                >
+                  <img
+                    src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-stars.svg"
+                    class="w-4 h-4"
+                  />
+                  Exclusive Brands
+                </a>
+                <a
+                  href="/ui/myaccount/newquote"
+                  class="flex items-center gap-2"
+                >
+                  <img
+                    src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-quote.svg"
+                    class="w-4 h-4"
+                  />
+                  Request a Quote
+                </a>
+              </div>
+            </div>
+          </div>
         </li>
 
         <li>
-          <details>
-            <summary>Resources</summary>
-            <ul class="p-2">
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Solutions</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Products</a></li>
               <li><a>Products 2</a></li>
             </ul>
-          </details>
+          </div>
         </li>
 
         <li>
-          <details>
-            <summary>Special Offers</summary>
-            <ul class="p-2">
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Resources</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Products</a></li>
               <li><a>Products 2</a></li>
             </ul>
-          </details>
+          </div>
         </li>
 
         <li>
-          <details>
-            <summary>Catalogs</summary>
-            <ul class="p-2">
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Special Offers</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Products</a></li>
               <li><a>Products 2</a></li>
             </ul>
-          </details>
+          </div>
         </li>
 
         <li>
-          <details>
-            <summary>Better MRO</summary>
-            <ul class="p-2">
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Catalogs</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Products</a></li>
               <li><a>Products 2</a></li>
             </ul>
-          </details>
+          </div>
+        </li>
+
+        <li>
+          <div class="dropdown dropdown-hover">
+            <label tabindex="0">Better MRO</label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Products</a></li>
+              <li><a>Products 2</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
 
       <!-- SEARCH BAR -->
-      <div class="form-control w-full max-w-xs mr-2 hidden lg:flex">
+      <div class="form-control w-full max-w-md mr-2 hidden lg:flex">
         <input
           type="text"
           placeholder="Serach for products..."
@@ -175,8 +466,23 @@
           </label>
         </div>
 
-        <!-- PERFIL -->
-        <div class="dropdown dropdown-end">
+        <!-- PERFIL LOGGEDOUT -->
+        <div class="dropdown dropdown-end profile-loggedout">
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img src="https://placehold.co/64x64?text=OW" />
+            </div>
+          </label>
+          <ul
+            tabindex="0"
+            class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+          >
+            <li onclick="loginLogout()"><a>Login</a></li>
+          </ul>
+        </div>
+
+        <!-- PROFILE LOGGEDIN -->
+        <div class="dropdown dropdown-end profile-loggedin hidden">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full">
               <img src="assets/cesarian.png" />
@@ -188,15 +494,53 @@
           >
             <li>
               <a class="justify-between">
-                Perfil
-                <span class="badge">Nuevo</span>
+                Profile
+                <span class="badge">New</span>
               </a>
             </li>
-            <li><a>Configuración</a></li>
-            <li><a>Salir</a></li>
+            <li><a>Settings</a></li>
+            <li onclick="loginLogout()"><a>Log out</a></li>
           </ul>
         </div>
       </div>
     </header>
+
+    <div class="mt-6 max-w-screen-2xl mx-auto">
+      <article class="mb-4">
+        <div
+          class="alert alert-info bg-blue-200 text-center flex justify-center rounded-none border-0"
+        >
+          <span>
+            Free Ground Shipping on orders over -
+
+            <strong> $99</strong>
+            Online Only Enter Code <strong>MW99</strong>
+            <a class="link link-primary" href="#"> Click to Apply</a>
+          </span>
+        </div>
+      </article>
+
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="card bg-base-100 w-full shadow-sm">
+          <figure>
+            <img
+              src="https://msc-direct-delivery.vercel.app/assets/homepage/slider-ss-test-a.jpg"
+              alt="Shoes"
+            />
+          </figure>
+        </div>
+
+        <div class="card bg-base-100 w-full shadow-sm">
+          <figure>
+            <img
+              src="https://msc-direct-delivery.vercel.app/assets/homepage/slider-ss-test-b.jpg"
+              alt="Shoes"
+            />
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
