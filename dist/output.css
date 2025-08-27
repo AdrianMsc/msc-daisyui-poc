@@ -2211,6 +2211,9 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
