@@ -1,728 +1,616 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daisy UI | Homepage (Daisy-only)</title>
-    <link rel="stylesheet" href="dist/output.css" />
-    <link
-      rel="shortcut icon"
-      href="https://www.mscdirect.com/favicon.ico"
-      type="image/x-icon"
-    />
-  </head>
-  <body class="bg-base-200">
-    <div class="drawer">
-      <input id="msc-drawer" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content">
-        <!-- Page content here -->
-        <small
-          class="p-2 text-right flex justify-end text-xs fixed bottom-0 w-full left-0 z-50 bg-base-200"
-        >
-          Need Help? Call Us<a
-            href="tel:1-800-645-7270"
-            class="text-primary font-bold"
-            >1-800-645-7270</a
-          >
-        </small>
-        <header class="navbar bg-base-100 shadow-md px-4">
-          <!-- LOGO -->
-          <div class="flex-1">
-            <a href="#">
-              <svg
-                width="88"
-                height="24"
-                viewBox="0 0 88 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M32.1692 6.80235L27.2722 23.9866H34.4233L41.2598 0H28.7034L20.8761 13.1274L21.8946 0H10.3594L0 23.9863L7.09041 23.9866L14.8571 6.80235L13.6873 23.9866H20.8994L32.1692 6.80235ZM61.2057 15.6857C62.2154 12.3545 59.7221 8.99044 56.2412 8.99044L55.9629 8.99066H49.5914C48.711 8.97645 48.4881 8.40899 48.6797 7.78268L48.9207 6.93761C49.121 6.30374 49.5819 5.71919 50.3901 5.73607H62.4492L65.0662 0H48.2369C45.1619 0.13881 43.1313 2.29603 42.5927 4.73108L41.3879 8.89294L41.3832 8.91004C40.4535 12.1662 42.7744 14.7281 46.1338 14.7281L46.3761 14.7327H53.4037C53.9774 14.7398 54.4125 14.9371 54.1973 15.6926L53.7495 17.2633C53.5299 18.0015 53.0361 18.233 52.4334 18.2563H39.3326L37.7015 23.9868L54.7123 23.9861C56.8051 23.9435 59.3899 21.9493 59.9937 19.9426L61.2057 15.6857ZM62.9935 18.1692C62.0636 21.4251 64.3847 23.987 67.7441 23.987L78.681 23.9866C80.7862 23.9866 83.3868 21.9613 83.9971 19.9327L85.0731 16.1939H78.4811L78.1284 17.2744C77.933 17.9258 77.4861 18.2352 76.7341 18.2363H71.233C70.3417 18.2363 70.083 17.7217 70.2698 17.0359L73.1166 7.10396C73.34 6.31529 73.7642 5.73229 74.6555 5.73229H80.3329C81.0872 5.73229 81.3544 6.04145 81.1685 6.69286L80.7565 8.19311H87.3465L87.7738 6.69175C88.7837 3.36053 86.2902 0 82.8095 0H72.6558C70.0039 0 67.673 1.75767 66.9441 4.30799L62.9935 18.1692Z"
-                  fill="#FF3333"
-                ></path>
-              </svg>
-            </a>
-          </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Daisy UI | Homepage (Daisy-only)</title>
+		<link rel="stylesheet" href="dist/output.css" />
+		<link rel="shortcut icon" href="https://www.mscdirect.com/favicon.ico" type="image/x-icon" />
+	</head>
+	<body class="bg-base-200">
+		<div class="drawer">
+			<input id="msc-drawer" type="checkbox" class="drawer-toggle" />
+			<div class="drawer-content">
+				<!-- Page content here -->
+				<small class="p-2 text-right flex justify-end text-xs fixed bottom-0 w-full left-0 z-50 bg-base-200">
+					Need Help? Call Us<a href="tel:1-800-645-7270" class="text-primary font-bold">1-800-645-7270</a>
+				</small>
+				<header class="navbar bg-base-100 shadow-md px-4 place-content-between overflow-hidden flex-nowrap">
+					<div class="flex flex-row items-center gap-1">
+						<label for="msc-drawer" class="btn btn-ghost drawer-button p-2 lg:hidden">
+							<!-- Hamburger Icon -->
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								class="w-6 h-6 text-black"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+						</label>
+						<!-- LOGO -->
+						<div class="flex-1 mr-2">
+							<a href="#">
+								<svg width="88" height="24" viewBox="0 0 88 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M32.1692 6.80235L27.2722 23.9866H34.4233L41.2598 0H28.7034L20.8761 13.1274L21.8946 0H10.3594L0 23.9863L7.09041 23.9866L14.8571 6.80235L13.6873 23.9866H20.8994L32.1692 6.80235ZM61.2057 15.6857C62.2154 12.3545 59.7221 8.99044 56.2412 8.99044L55.9629 8.99066H49.5914C48.711 8.97645 48.4881 8.40899 48.6797 7.78268L48.9207 6.93761C49.121 6.30374 49.5819 5.71919 50.3901 5.73607H62.4492L65.0662 0H48.2369C45.1619 0.13881 43.1313 2.29603 42.5927 4.73108L41.3879 8.89294L41.3832 8.91004C40.4535 12.1662 42.7744 14.7281 46.1338 14.7281L46.3761 14.7327H53.4037C53.9774 14.7398 54.4125 14.9371 54.1973 15.6926L53.7495 17.2633C53.5299 18.0015 53.0361 18.233 52.4334 18.2563H39.3326L37.7015 23.9868L54.7123 23.9861C56.8051 23.9435 59.3899 21.9493 59.9937 19.9426L61.2057 15.6857ZM62.9935 18.1692C62.0636 21.4251 64.3847 23.987 67.7441 23.987L78.681 23.9866C80.7862 23.9866 83.3868 21.9613 83.9971 19.9327L85.0731 16.1939H78.4811L78.1284 17.2744C77.933 17.9258 77.4861 18.2352 76.7341 18.2363H71.233C70.3417 18.2363 70.083 17.7217 70.2698 17.0359L73.1166 7.10396C73.34 6.31529 73.7642 5.73229 74.6555 5.73229H80.3329C81.0872 5.73229 81.3544 6.04145 81.1685 6.69286L80.7565 8.19311H87.3465L87.7738 6.69175C88.7837 3.36053 86.2902 0 82.8095 0H72.6558C70.0039 0 67.673 1.75767 66.9441 4.30799L62.9935 18.1692Z"
+										fill="#FF3333"
+									></path>
+								</svg>
+							</a>
+						</div>
 
-          <label for="msc-drawer" class="btn btn-ghost drawer-button p-2">
-            <!-- Hamburger Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-6 h-6 text-black"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </label>
+						<!-- NAVIGATION -->
+						<ul class="menu menu-horizontal px-1 hidden lg:flex">
+							<li>
+								<div class="dropdown dropdown-hover">
+									<!-- botón / label -->
+									<label tabindex="0" class="flex flex-row items-center gap-2"
+										>Shop All Products
+										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3 2.5L18 17.5L33 2.5"
+												stroke="black"
+												stroke-width="5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</label>
 
-          <ul class="menu menu-horizontal px-1">
-            <li>
-              <div class="dropdown dropdown-hover">
-                <!-- botón / label -->
-                <label tabindex="0">Shop All Products</label>
+									<!-- mega menú -->
+									<div
+										tabindex="0"
+										class="dropdown-content bg-base-100 shadow-xl rounded-box mt-1 w-screen max-w-6xl p-4"
+									>
+										<!-- línea superior azul -->
+										<div class="border-b-2 border-blue-600 mb-4"></div>
 
-                <!-- mega menú -->
-                <div
-                  tabindex="0"
-                  class="dropdown-content bg-base-100 shadow-xl rounded-box mt-1 w-screen max-w-6xl p-4"
-                >
-                  <!-- línea superior azul -->
-                  <div class="border-b-2 border-blue-600 mb-4"></div>
+										<!-- GRID DE CATEGORÍAS -->
+										<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 max-h-[70vh] overflow-y-auto">
+											<!-- Columna 1 -->
+											<ul class="menu bg-base-100 rounded-box">
+												<li>
+													<a href="/ProductsHomeView">All Product Categories </a>
+												</li>
+												<li>
+													<a href="/browse/Abrasives?navid=2100008">Abrasives</a>
+												</li>
+												<li>
+													<a href="/browse/Clamping-Workholding-Positioning?navid=2108152"
+														>Clamping, Workholding & Positioning</a
+													>
+												</li>
+												<li>
+													<a href="/browse/Fasteners?navid=2108705">Fasteners</a>
+												</li>
+												<li>
+													<a href="/browse/Fleet-Maintenance?navid=2103521">Fleet Maintenance</a>
+												</li>
+												<li><a href="/browse/HVAC?navid=2104085">HVAC</a></li>
+												<li>
+													<a href="/browse/Hand-Tools?navid=2102364">Hand Tools</a>
+												</li>
+												<li>
+													<a href="/browse/Hardware?navid=2103522">Hardware</a>
+												</li>
+												<li>
+													<a href="/browse/Holemaking?navid=2106067">Holemaking</a>
+												</li>
+											</ul>
 
-                  <!-- GRID DE CATEGORÍAS -->
-                  <div
-                    class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 max-h-[70vh] overflow-y-auto"
-                  >
-                    <!-- Columna 1 -->
-                    <ul class="menu bg-base-100 rounded-box">
-                      <li>
-                        <a href="/ProductsHomeView">All Product Categories</a>
-                      </li>
-                      <li>
-                        <a href="/browse/Abrasives?navid=2100008">Abrasives</a>
-                      </li>
-                      <li>
-                        <a
-                          href="/browse/Clamping-Workholding-Positioning?navid=2108152"
-                          >Clamping, Workholding & Positioning</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Fasteners?navid=2108705">Fasteners</a>
-                      </li>
-                      <li>
-                        <a href="/browse/Fleet-Maintenance?navid=2103521"
-                          >Fleet Maintenance</a
-                        >
-                      </li>
-                      <li><a href="/browse/HVAC?navid=2104085">HVAC</a></li>
-                      <li>
-                        <a href="/browse/Hand-Tools?navid=2102364"
-                          >Hand Tools</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Hardware?navid=2103522">Hardware</a>
-                      </li>
-                      <li>
-                        <a href="/browse/Holemaking?navid=2106067"
-                          >Holemaking</a
-                        >
-                      </li>
-                    </ul>
+											<!-- Columna 2 -->
+											<ul class="menu bg-base-100 rounded-box">
+												<li>
+													<a href="/browse/Hose-Tube-Fittings-Valves?navid=2104084">Hose, Tube, Fittings & Valves</a>
+												</li>
+												<li>
+													<a href="/browse/Indexable-Cutting-Tools?navid=2107070">Indexable Cutting Tools</a>
+												</li>
+												<li>
+													<a href="/browse/Janitorial-Facility-Maintenance?navid=2106462"
+														>Janitorial & Facility Maintenance</a
+													>
+												</li>
+												<li>
+													<a href="/browse/Lighting-Electrical?navid=2109056">Lighting & Electrical</a>
+												</li>
+												<li>
+													<a href="/browse/Lubricants-Coolants-Fluids?navid=2107390">Lubricants, Coolants & Fluids</a>
+												</li>
+												<li>
+													<a href="/browse/Machinery?navid=2107502">Machinery</a>
+												</li>
+												<li>
+													<a href="/browse/Marking-Labeling?navid=2103523">Marking & Labeling</a>
+												</li>
+												<li>
+													<a href="/browse/Material-Handling-Storage?navid=2105165">Material Handling & Storage</a>
+												</li>
+												<li>
+													<a href="/browse/Measuring-Inspecting?navid=2107563">Measuring & Inspecting</a>
+												</li>
+											</ul>
 
-                    <!-- Columna 2 -->
-                    <ul class="menu bg-base-100 rounded-box">
-                      <li>
-                        <a
-                          href="/browse/Hose-Tube-Fittings-Valves?navid=2104084"
-                          >Hose, Tube, Fittings & Valves</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Indexable-Cutting-Tools?navid=2107070"
-                          >Indexable Cutting Tools</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="/browse/Janitorial-Facility-Maintenance?navid=2106462"
-                          >Janitorial & Facility Maintenance</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Lighting-Electrical?navid=2109056"
-                          >Lighting & Electrical</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="/browse/Lubricants-Coolants-Fluids?navid=2107390"
-                          >Lubricants, Coolants & Fluids</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Machinery?navid=2107502">Machinery</a>
-                      </li>
-                      <li>
-                        <a href="/browse/Marking-Labeling?navid=2103523"
-                          >Marking & Labeling</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="/browse/Material-Handling-Storage?navid=2105165"
-                          >Material Handling & Storage</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Measuring-Inspecting?navid=2107563"
-                          >Measuring & Inspecting</a
-                        >
-                      </li>
-                    </ul>
+											<!-- Columna 3 -->
+											<ul class="menu bg-base-100 rounded-box">
+												<li>
+													<a href="/browse/Milling?navid=2106224">Milling</a>
+												</li>
+												<li>
+													<a href="/browse/Motion-Control-Fluid-Power?navid=2104087">Motion Control & Fluid Power</a>
+												</li>
+												<li>
+													<a href="/browse/Plumbing-Pumps-Filtration?navid=2104086">Plumbing, Pumps & Filtration</a>
+												</li>
+												<li>
+													<a href="/browse/Power-Tools?navid=2107244">Power Tools</a>
+												</li>
+												<li>
+													<a href="/browse/Raw-Materials?navid=2101662">Raw Materials</a>
+												</li>
+												<li><a href="/browse/Safety?navid=2106309">Safety</a></li>
+												<li>
+													<a href="/browse/Saw-Blades?navid=2105933">Saw Blades</a>
+												</li>
+												<li>
+													<a href="/browse/Shipping-Office-Supplies?navid=2104088">Shipping & Office Supplies</a>
+												</li>
+												<li>
+													<a href="/browse/Tapes-Adhesives?navid=2108682">Tapes & Adhesives</a>
+												</li>
+											</ul>
 
-                    <!-- Columna 3 -->
-                    <ul class="menu bg-base-100 rounded-box">
-                      <li>
-                        <a href="/browse/Milling?navid=2106224">Milling</a>
-                      </li>
-                      <li>
-                        <a
-                          href="/browse/Motion-Control-Fluid-Power?navid=2104087"
-                          >Motion Control & Fluid Power</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="/browse/Plumbing-Pumps-Filtration?navid=2104086"
-                          >Plumbing, Pumps & Filtration</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Power-Tools?navid=2107244"
-                          >Power Tools</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Raw-Materials?navid=2101662"
-                          >Raw Materials</a
-                        >
-                      </li>
-                      <li><a href="/browse/Safety?navid=2106309">Safety</a></li>
-                      <li>
-                        <a href="/browse/Saw-Blades?navid=2105933"
-                          >Saw Blades</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Shipping-Office-Supplies?navid=2104088"
-                          >Shipping & Office Supplies</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Tapes-Adhesives?navid=2108682"
-                          >Tapes & Adhesives</a
-                        >
-                      </li>
-                    </ul>
+											<!-- Columna 4 -->
+											<ul class="menu bg-base-100 rounded-box">
+												<li>
+													<a href="/browse/Threading?navid=2105963">Threading</a>
+												</li>
+												<li>
+													<a href="/browse/Tool-Holding?navid=2108494">Tool Holding</a>
+												</li>
+												<li>
+													<a href="/browse/Turning-Boring?navid=2105881">Turning & Boring</a>
+												</li>
+												<li>
+													<a href="/browse/Welding-Soldering?navid=2100524">Welding & Soldering</a>
+												</li>
+											</ul>
+										</div>
 
-                    <!-- Columna 4 -->
-                    <ul class="menu bg-base-100 rounded-box">
-                      <li>
-                        <a href="/browse/Threading?navid=2105963">Threading</a>
-                      </li>
-                      <li>
-                        <a href="/browse/Tool-Holding?navid=2108494"
-                          >Tool Holding</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Turning-Boring?navid=2105881"
-                          >Turning & Boring</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/browse/Welding-Soldering?navid=2100524"
-                          >Welding & Soldering</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+										<!-- Sección inferior con iconos -->
+										<div class="mt-4 grid grid-cols-2 md:flex gap-4 border-t pt-4 bg-gray-100 p-4 rounded-b-xl">
+											<a href="/r/clearance-specials" class="flex items-center gap-2">
+												<i class="fa fa-tag text-primary"></i> Clearance
+											</a>
+											<a href="/corporate/industrial-suppliers-line-card" class="flex items-center gap-2">
+												<img src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-book.svg" class="w-4 h-4" />
+												All Brands
+											</a>
+											<a href="/products/new-items" class="flex items-center gap-2">
+												<span class="text-xs bg-blue-600 text-white px-1 rounded">NEW</span>
+												Products
+											</a>
+											<a href="/products/exclusive-brands" class="flex items-center gap-2">
+												<img src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-stars.svg" class="w-4 h-4" />
+												Exclusive Brands
+											</a>
+											<a href="/ui/myaccount/newquote" class="flex items-center gap-2">
+												<img src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-quote.svg" class="w-4 h-4" />
+												Request a Quote
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
 
-                  <!-- Sección inferior con iconos -->
-                  <div
-                    class="mt-4 grid grid-cols-2 md:flex gap-4 border-t pt-4 bg-gray-100 p-4 rounded-b-xl"
-                  >
-                    <a
-                      href="/r/clearance-specials"
-                      class="flex items-center gap-2"
-                    >
-                      <i class="fa fa-tag text-primary"></i> Clearance
-                    </a>
-                    <a
-                      href="/corporate/industrial-suppliers-line-card"
-                      class="flex items-center gap-2"
-                    >
-                      <img
-                        src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-book.svg"
-                        class="w-4 h-4"
-                      />
-                      All Brands
-                    </a>
-                    <a
-                      href="/products/new-items"
-                      class="flex items-center gap-2"
-                    >
-                      <span class="text-xs bg-blue-600 text-white px-1 rounded"
-                        >NEW</span
-                      >
-                      Products
-                    </a>
-                    <a
-                      href="/products/exclusive-brands"
-                      class="flex items-center gap-2"
-                    >
-                      <img
-                        src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-stars.svg"
-                        class="w-4 h-4"
-                      />
-                      Exclusive Brands
-                    </a>
-                    <a
-                      href="/ui/myaccount/newquote"
-                      class="flex items-center gap-2"
-                    >
-                      <img
-                        src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-quote.svg"
-                        class="w-4 h-4"
-                      />
-                      Request a Quote
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+							<li>
+								<div class="dropdown dropdown-hover">
+									<label tabindex="0" class="flex flex-row items-center gap-2"
+										>Solutions
+										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3 2.5L18 17.5L33 2.5"
+												stroke="black"
+												stroke-width="5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/></svg
+									></label>
+									<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+										<li><a>Products</a></li>
+										<li><a>Products 2</a></li>
+									</ul>
+								</div>
+							</li>
 
-            <li>
-              <div class="dropdown dropdown-hover">
-                <label tabindex="0">Solutions</label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Products</a></li>
-                  <li><a>Products 2</a></li>
-                </ul>
-              </div>
-            </li>
+							<li>
+								<div class="dropdown dropdown-hover">
+									<label tabindex="0" class="flex flex-row items-center gap-2">Resources <svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3 2.5L18 17.5L33 2.5"
+											stroke="black"
+											stroke-width="5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/></svg
+									</label>
+									<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+										<li><a>Products</a></li>
+										<li><a>Products 2</a></li>
+									</ul>
+								</div>
+							</li>
 
-            <li>
-              <div class="dropdown dropdown-hover">
-                <label tabindex="0">Resources</label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Products</a></li>
-                  <li><a>Products 2</a></li>
-                </ul>
-              </div>
-            </li>
+							<li>
+								<div class="dropdown dropdown-hover">
+									<label tabindex="0" class="flex flex-row items-center gap-2">Special Offers <svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3 2.5L18 17.5L33 2.5"
+											stroke="black"
+											stroke-width="5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/></svg
+									</label>
+									<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+										<li><a>Products</a></li>
+										<li><a>Products 2</a></li>
+									</ul>
+								</div>
+							</li>
 
-            <li>
-              <div class="dropdown dropdown-hover">
-                <label tabindex="0">Special Offers</label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Products</a></li>
-                  <li><a>Products 2</a></li>
-                </ul>
-              </div>
-            </li>
+							<li>
+								<div class="dropdown dropdown-hover">
+									<label tabindex="0" class="flex flex-row items-center gap-2">Catalogs <svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3 2.5L18 17.5L33 2.5"
+											stroke="black"
+											stroke-width="5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/></svg
+									</label>
+									<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+										<li><a>Products</a></li>
+										<li><a>Products 2</a></li>
+									</ul>
+								</div>
+							</li>
 
-            <li>
-              <div class="dropdown dropdown-hover">
-                <label tabindex="0">Catalogs</label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Products</a></li>
-                  <li><a>Products 2</a></li>
-                </ul>
-              </div>
-            </li>
+							<li>
+								<div class="dropdown dropdown-hover">
+									<label tabindex="0" class="flex flex-row items-center gap-2">Better MRO <svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3 2.5L18 17.5L33 2.5"
+											stroke="black"
+											stroke-width="5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/></svg
+									</label>
+									<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+										<li><a>Products</a></li>
+										<li><a>Products 2</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- SEARCH BAR -->
+					<div class="form-control w-full max-w-md  flex">
+						<input type="text" placeholder="Serach for products..." class="input input-bordered w-full" />
+					</div>
 
-            <li>
-              <div class="dropdown dropdown-hover">
-                <label tabindex="0">Better MRO</label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Products</a></li>
-                  <li><a>Products 2</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+					<div class="flex flex-row items-center place-content-between flex-nowrap overflow-hidden min-w-fit">
+						<div class="navbar-end lg:hidden">
+							<!-- DROP DOWN PRODUCTOS -->
+							<div class="dropdown dropdown-end">
+								<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-[24px]">
+										<path
+											d="M64 128C64 110.3 78.3 96 96 96L544 96C561.7 96 576 110.3 576 128L576 160C576 177.7 561.7 192 544 192L96 192C78.3 192 64 177.7 64 160L64 128zM96 240L544 240L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 240zM248 304C234.7 304 224 314.7 224 328C224 341.3 234.7 352 248 352L392 352C405.3 352 416 341.3 416 328C416 314.7 405.3 304 392 304L248 304z"
+										/>
+									</svg>
+								</label>
+								<ul tabindex="0" class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+									<li>
+										<a class="justify-between">
+											Item 1
+											<span class="badge">Nuevo</span>
+										</a>
+									</li>
+									<li><a>Item 2</a></li>
+									<li><a>Item 3</a></li>
+								</ul>
+							</div>
+						</div>
 
-          <!-- SEARCH BAR -->
-          <div class="form-control w-full max-w-md mr-2 hidden lg:flex">
-            <input
-              type="text"
-              placeholder="Serach for products..."
-              class="input input-bordered w-full"
-            />
-          </div>
+						<!-- ICONOS DERECHA -->
+						<div class="flex-none gap-4 flex-nowrap overflow-hidden min-w-fit">
+							<!-- CARRITO -->
+							<div class="dropdown dropdown-end">
+								<label tabindex="0" class="btn btn-ghost btn-circle">
+									<div class="indicator">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="h-5 w-5"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.217 1.32l.083.07a1 1 0 001.32-.083L9 15h6l1.293 1.293a1 1 0 001.497-1.32L17 13M7 13h10"
+											/>
+										</svg>
+										<!-- <span class="badge badge-sm indicator-item">3</span> -->
+									</div>
+								</label>
+							</div>
 
-          <div class="navbar-end lg:hidden">
-            <button class="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </button>
-            <!-- DROP DOWN PRODUCTOS -->
-            <div class="dropdown dropdown-end">
-              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"
-                  class="w-[24px]"
-                >
-                  <path
-                    d="M64 128C64 110.3 78.3 96 96 96L544 96C561.7 96 576 110.3 576 128L576 160C576 177.7 561.7 192 544 192L96 192C78.3 192 64 177.7 64 160L64 128zM96 240L544 240L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 240zM248 304C234.7 304 224 314.7 224 328C224 341.3 234.7 352 248 352L392 352C405.3 352 416 341.3 416 328C416 314.7 405.3 304 392 304L248 304z"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-              >
-                <li>
-                  <a class="justify-between">
-                    Item 1
-                    <span class="badge">Nuevo</span>
-                  </a>
-                </li>
-                <li><a>Item 2</a></li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-          </div>
+							<!-- PERFIL LOGGEDOUT -->
+							<div class="dropdown dropdown-end profile-loggedout">
+								<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+									<div class="w-10 rounded-full">
+										<img src="https://placehold.co/64x64?text=OW" />
+									</div>
+								</label>
+								<ul tabindex="0" class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+									<li onclick="loginLogout()"><a>Login</a></li>
+								</ul>
+							</div>
 
-          <!-- ICONOS DERECHA -->
-          <div class="flex-none gap-4">
-            <!-- CARRITO -->
-            <div class="dropdown dropdown-end">
-              <label tabindex="0" class="btn btn-ghost btn-circle">
-                <div class="indicator">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.217 1.32l.083.07a1 1 0 001.32-.083L9 15h6l1.293 1.293a1 1 0 001.497-1.32L17 13M7 13h10"
-                    />
-                  </svg>
-                  <!-- <span class="badge badge-sm indicator-item">3</span> -->
-                </div>
-              </label>
-            </div>
+							<!-- PROFILE LOGGEDIN -->
+							<div class="dropdown dropdown-end profile-loggedin hidden">
+								<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+									<div class="w-10 rounded-full">
+										<img src="assets/cesarian.png" />
+									</div>
+								</label>
+								<ul tabindex="0" class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+									<li>
+										<a class="justify-between">
+											Profile
+											<span class="badge">New</span>
+										</a>
+									</li>
+									<li><a>Settings</a></li>
+									<li onclick="loginLogout()"><a>Log out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
 
-            <!-- PERFIL LOGGEDOUT -->
-            <div class="dropdown dropdown-end profile-loggedout">
-              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                <div class="w-10 rounded-full">
-                  <img src="https://placehold.co/64x64?text=OW" />
-                </div>
-              </label>
-              <ul
-                tabindex="0"
-                class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-              >
-                <li onclick="loginLogout()"><a>Login</a></li>
-              </ul>
-            </div>
+				<div class="mt-6 max-w-screen-2xl mx-auto px-5">
+					<article class="mb-4">
+						<div class="alert alert-info bg-[#F1F5FE] text-center flex justify-center rounded-none border-0">
+							<span>
+								Free Ground Shipping on orders over -
 
-            <!-- PROFILE LOGGEDIN -->
-            <div class="dropdown dropdown-end profile-loggedin hidden">
-              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                <div class="w-10 rounded-full">
-                  <img src="assets/cesarian.png" />
-                </div>
-              </label>
-              <ul
-                tabindex="0"
-                class="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-              >
-                <li>
-                  <a class="justify-between">
-                    Profile
-                    <span class="badge">New</span>
-                  </a>
-                </li>
-                <li><a>Settings</a></li>
-                <li onclick="loginLogout()"><a>Log out</a></li>
-              </ul>
-            </div>
-          </div>
-        </header>
+								<strong> $99</strong>
+								Online Only Enter Code <strong>MW99</strong>
+								<a class="link link-primary" href="#"> Click to Apply</a>
+							</span>
+						</div>
+					</article>
 
-        <div class="mt-6 max-w-screen-2xl mx-auto px-5">
-          <article class="mb-4">
-            <div
-              class="alert alert-info bg-[#F1F5FE] text-center flex justify-center rounded-none border-0"
-            >
-              <span>
-                Free Ground Shipping on orders over -
+					<section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+						<div class="card bg-base-100 w-full shadow-sm">
+							<figure>
+								<img src="https://msc-direct-delivery.vercel.app/assets/homepage/slider-ss-test-a.jpg" alt="Shoes" />
+							</figure>
+						</div>
 
-                <strong> $99</strong>
-                Online Only Enter Code <strong>MW99</strong>
-                <a class="link link-primary" href="#"> Click to Apply</a>
-              </span>
-            </div>
-          </article>
+						<div class="card bg-base-100 w-full shadow-sm">
+							<figure>
+								<img src="https://msc-direct-delivery.vercel.app/assets/homepage/slider-ss-test-b.jpg" alt="Shoes" />
+							</figure>
+						</div>
+					</section>
 
-          <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div class="card bg-base-100 w-full shadow-sm">
-              <figure>
-                <img
-                  src="https://msc-direct-delivery.vercel.app/assets/homepage/slider-ss-test-a.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-            </div>
+					<section class="my-4">
+						<h1 class="text-2xl font-bold mb-6">Recently Viewed</h1>
+						<div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+							<article class="card bg-base-100 shadow-sm">
+								<div class="card-body">
+									<span class="badge badge-xs badge-warning">Most Popular</span>
+									<img
+										src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
+										alt="Product Image"
+										class="w-fit mx-auto"
+									/>
+									<div class="flex justify-between">
+										<h2 class="text-xl font-bold">Web Price</h2>
+										<span class="text-xl">$293.17/ea</span>
+									</div>
+									<ul class="flex flex-col gap-2 text-xs">
+										<li>
+											<span class="font-bold">DEWALT</span>
+										</li>
+										<li class="font-bold">Power Tool Battery: 20V, Lithium-ion</li>
+										<li class="text-gray-500">MSC# 73659377</li>
+									</ul>
 
-            <div class="card bg-base-100 w-full shadow-sm">
-              <figure>
-                <img
-                  src="https://msc-direct-delivery.vercel.app/assets/homepage/slider-ss-test-b.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-            </div>
-          </section>
+									<div class="mt-6 flex gap-2">
+										<input
+											type="number"
+											class="input validator w-16"
+											required
+											placeholder="QTY"
+											min="1"
+											max="10"
+											title="Must be between be 1 to 10"
+										/>
 
-          <section class="my-4">
-            <h1 class="text-2xl font-bold mb-6">Recently Viewed</h1>
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
-              <article class="card bg-base-100 shadow-sm">
-                <div class="card-body">
-                  <span class="badge badge-xs badge-warning">Most Popular</span>
-                  <img
-                    src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
-                    alt="Product Image"
-                    class="w-fit mx-auto"
-                  />
-                  <div class="flex justify-between">
-                    <h2 class="text-xl font-bold">Web Price</h2>
-                    <span class="text-xl">$293.17/ea</span>
-                  </div>
-                  <ul class="flex flex-col gap-2 text-xs">
-                    <li>
-                      <span class="font-bold">DEWALT</span>
-                    </li>
-                    <li class="font-bold">
-                      Power Tool Battery: 20V, Lithium-ion
-                    </li>
-                    <li class="text-gray-500">MSC# 73659377</li>
-                  </ul>
+										<button class="btn btn-primary flex-1">Add to Cart</button>
+									</div>
+								</div>
+							</article>
 
-                  <div class="mt-6 flex gap-2">
-                    <input
-                      type="number"
-                      class="input validator w-16"
-                      required
-                      placeholder="QTY"
-                      min="1"
-                      max="10"
-                      title="Must be between be 1 to 10"
-                    />
+							<article class="card bg-base-100 shadow-sm">
+								<div class="card-body">
+									<span class="badge badge-xs badge-warning">Most Popular</span>
+									<img
+										src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
+										alt="Product Image"
+										class="w-fit mx-auto"
+									/>
+									<div class="flex justify-between">
+										<h2 class="text-xl font-bold">Web Price</h2>
+										<span class="text-xl">$293.17/ea</span>
+									</div>
+									<ul class="flex flex-col gap-2 text-xs">
+										<li>
+											<span class="font-bold">DEWALT</span>
+										</li>
+										<li class="font-bold">Power Tool Battery: 20V, Lithium-ion</li>
+										<li class="text-gray-500">MSC# 73659377</li>
+									</ul>
 
-                    <button class="btn btn-primary flex-1">Add to Cart</button>
-                  </div>
-                </div>
-              </article>
+									<div class="mt-6 flex gap-2">
+										<input
+											type="number"
+											class="input validator w-16"
+											required
+											placeholder="QTY"
+											min="1"
+											max="10"
+											title="Must be between be 1 to 10"
+										/>
 
-              <article class="card bg-base-100 shadow-sm">
-                <div class="card-body">
-                  <span class="badge badge-xs badge-warning">Most Popular</span>
-                  <img
-                    src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
-                    alt="Product Image"
-                    class="w-fit mx-auto"
-                  />
-                  <div class="flex justify-between">
-                    <h2 class="text-xl font-bold">Web Price</h2>
-                    <span class="text-xl">$293.17/ea</span>
-                  </div>
-                  <ul class="flex flex-col gap-2 text-xs">
-                    <li>
-                      <span class="font-bold">DEWALT</span>
-                    </li>
-                    <li class="font-bold">
-                      Power Tool Battery: 20V, Lithium-ion
-                    </li>
-                    <li class="text-gray-500">MSC# 73659377</li>
-                  </ul>
+										<button class="btn btn-primary flex-1">Add to Cart</button>
+									</div>
+								</div>
+							</article>
 
-                  <div class="mt-6 flex gap-2">
-                    <input
-                      type="number"
-                      class="input validator w-16"
-                      required
-                      placeholder="QTY"
-                      min="1"
-                      max="10"
-                      title="Must be between be 1 to 10"
-                    />
+							<article class="card bg-base-100 shadow-sm">
+								<div class="card-body">
+									<span class="badge badge-xs badge-warning">Most Popular</span>
+									<img
+										src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
+										alt="Product Image"
+										class="w-fit mx-auto"
+									/>
+									<div class="flex justify-between">
+										<h2 class="text-xl font-bold">Web Price</h2>
+										<span class="text-xl">$293.17/ea</span>
+									</div>
+									<ul class="flex flex-col gap-2 text-xs">
+										<li>
+											<span class="font-bold">DEWALT</span>
+										</li>
+										<li class="font-bold">Power Tool Battery: 20V, Lithium-ion</li>
+										<li class="text-gray-500">MSC# 73659377</li>
+									</ul>
 
-                    <button class="btn btn-primary flex-1">Add to Cart</button>
-                  </div>
-                </div>
-              </article>
+									<div class="mt-6 flex gap-2">
+										<input
+											type="number"
+											class="input validator w-16"
+											required
+											placeholder="QTY"
+											min="1"
+											max="10"
+											title="Must be between be 1 to 10"
+										/>
 
-              <article class="card bg-base-100 shadow-sm">
-                <div class="card-body">
-                  <span class="badge badge-xs badge-warning">Most Popular</span>
-                  <img
-                    src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
-                    alt="Product Image"
-                    class="w-fit mx-auto"
-                  />
-                  <div class="flex justify-between">
-                    <h2 class="text-xl font-bold">Web Price</h2>
-                    <span class="text-xl">$293.17/ea</span>
-                  </div>
-                  <ul class="flex flex-col gap-2 text-xs">
-                    <li>
-                      <span class="font-bold">DEWALT</span>
-                    </li>
-                    <li class="font-bold">
-                      Power Tool Battery: 20V, Lithium-ion
-                    </li>
-                    <li class="text-gray-500">MSC# 73659377</li>
-                  </ul>
+										<button class="btn btn-primary flex-1">Add to Cart</button>
+									</div>
+								</div>
+							</article>
 
-                  <div class="mt-6 flex gap-2">
-                    <input
-                      type="number"
-                      class="input validator w-16"
-                      required
-                      placeholder="QTY"
-                      min="1"
-                      max="10"
-                      title="Must be between be 1 to 10"
-                    />
+							<article class="card bg-base-100 shadow-sm">
+								<div class="card-body">
+									<span class="badge badge-xs badge-warning">Most Popular</span>
+									<img
+										src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
+										alt="Product Image"
+										class="w-fit mx-auto"
+									/>
+									<div class="flex justify-between">
+										<h2 class="text-xl font-bold">Web Price</h2>
+										<span class="text-xl">$293.17/ea</span>
+									</div>
+									<ul class="flex flex-col gap-2 text-xs">
+										<li>
+											<span class="font-bold">DEWALT</span>
+										</li>
+										<li class="font-bold">Power Tool Battery: 20V, Lithium-ion</li>
+										<li class="text-gray-500">MSC# 73659377</li>
+									</ul>
 
-                    <button class="btn btn-primary flex-1">Add to Cart</button>
-                  </div>
-                </div>
-              </article>
+									<div class="mt-6 flex gap-2">
+										<input
+											type="number"
+											class="input validator w-16"
+											required
+											placeholder="QTY"
+											min="1"
+											max="10"
+											title="Must be between be 1 to 10"
+										/>
 
-              <article class="card bg-base-100 shadow-sm">
-                <div class="card-body">
-                  <span class="badge badge-xs badge-warning">Most Popular</span>
-                  <img
-                    src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
-                    alt="Product Image"
-                    class="w-fit mx-auto"
-                  />
-                  <div class="flex justify-between">
-                    <h2 class="text-xl font-bold">Web Price</h2>
-                    <span class="text-xl">$293.17/ea</span>
-                  </div>
-                  <ul class="flex flex-col gap-2 text-xs">
-                    <li>
-                      <span class="font-bold">DEWALT</span>
-                    </li>
-                    <li class="font-bold">
-                      Power Tool Battery: 20V, Lithium-ion
-                    </li>
-                    <li class="text-gray-500">MSC# 73659377</li>
-                  </ul>
+										<button class="btn btn-primary flex-1">Add to Cart</button>
+									</div>
+								</div>
+							</article>
 
-                  <div class="mt-6 flex gap-2">
-                    <input
-                      type="number"
-                      class="input validator w-16"
-                      required
-                      placeholder="QTY"
-                      min="1"
-                      max="10"
-                      title="Must be between be 1 to 10"
-                    />
+							<article class="card bg-base-100 shadow-sm">
+								<div class="card-body">
+									<span class="badge badge-xs badge-warning">Most Popular</span>
+									<img
+										src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
+										alt="Product Image"
+										class="w-fit mx-auto"
+									/>
+									<div class="flex justify-between">
+										<h2 class="text-xl font-bold">Web Price</h2>
+										<span class="text-xl">$293.17/ea</span>
+									</div>
+									<ul class="flex flex-col gap-2 text-xs">
+										<li>
+											<span class="font-bold">DEWALT</span>
+										</li>
+										<li class="font-bold">Power Tool Battery: 20V, Lithium-ion</li>
+										<li class="text-gray-500">MSC# 73659377</li>
+									</ul>
 
-                    <button class="btn btn-primary flex-1">Add to Cart</button>
-                  </div>
-                </div>
-              </article>
+									<div class="mt-6 flex gap-2">
+										<input
+											type="number"
+											class="input validator w-16"
+											required
+											placeholder="QTY"
+											min="1"
+											max="10"
+											title="Must be between be 1 to 10"
+										/>
 
-              <article class="card bg-base-100 shadow-sm">
-                <div class="card-body">
-                  <span class="badge badge-xs badge-warning">Most Popular</span>
-                  <img
-                    src="https://msc-direct-delivery.vercel.app/assets/homepage/drill.png"
-                    alt="Product Image"
-                    class="w-fit mx-auto"
-                  />
-                  <div class="flex justify-between">
-                    <h2 class="text-xl font-bold">Web Price</h2>
-                    <span class="text-xl">$293.17/ea</span>
-                  </div>
-                  <ul class="flex flex-col gap-2 text-xs">
-                    <li>
-                      <span class="font-bold">DEWALT</span>
-                    </li>
-                    <li class="font-bold">
-                      Power Tool Battery: 20V, Lithium-ion
-                    </li>
-                    <li class="text-gray-500">MSC# 73659377</li>
-                  </ul>
+										<button class="btn btn-primary flex-1">Add to Cart</button>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="drawer-side">
+				<label for="msc-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+				<ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+					<!-- Sidebar content here -->
+					<li><a>Sidebar Item 1</a></li>
+					<li><a>Sidebar Item 2</a></li>
+				</ul>
+			</div>
+		</div>
 
-                  <div class="mt-6 flex gap-2">
-                    <input
-                      type="number"
-                      class="input validator w-16"
-                      required
-                      placeholder="QTY"
-                      min="1"
-                      max="10"
-                      title="Must be between be 1 to 10"
-                    />
-
-                    <button class="btn btn-primary flex-1">Add to Cart</button>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div class="drawer-side">
-        <label
-          for="msc-drawer"
-          aria-label="close sidebar"
-          class="drawer-overlay"
-        ></label>
-        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-          <!-- Sidebar content here -->
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <script src="js/index.js"></script>
-  </body>
+		<script src="js/index.js"></script>
+	</body>
 </html>
