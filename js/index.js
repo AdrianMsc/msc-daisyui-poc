@@ -6,7 +6,7 @@ const applyAuthState = (isLoggedIn) => {
 	// Show/hide based on state
 	loggedOutEls.forEach((el) => el.classList.toggle('hidden', !isLoggedIn));
 	loggedInEls.forEach((el) => el.classList.toggle('hidden', isLoggedIn));
-	notiEls.forEach((el) => el.classList.toggle('hidden', !isLoggedIn));
+	notiEls.forEach((el) => el.classList.toggle('hidden', isLoggedIn));
 
 	// Persist as string
 	localStorage.setItem('isLoggedIn', isLoggedIn ? 'true' : 'false');
