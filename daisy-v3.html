@@ -12,289 +12,403 @@
     />
   </head>
   <body class="bg-white">
-    <nav class="w-full bg-base-200">
-      <div class="container mx-auto flex p-2 text-xs">
-        <div class="flex gap-6">
-          <div class="dropdown dropdown-hover">
-            <label tabindex="0" class="flex flex-row items-center gap-2"
-              >Solutions
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 36 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+    <div class="drawer">
+      <input id="msc-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <!-- Page content here -->
+        <!-- <nav class="w-full bg-base-200">
+          <div class="container mx-auto flex p-2 text-xs">
+            <div class="ml-auto">
+              Need Help? Call Us<a
+                href="tel:1-800-645-7270"
+                class="text-primary font-bold"
+                >1-800-645-7270</a
               >
-                <path
-                  d="M3 2.5L18 17.5L33 2.5"
-                  stroke="black"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a
-                  >Products
-                  <div class="badge badge-info badge-sm badge-noti">1</div></a
-                >
-              </li>
-              <li><a>Products 2</a></li>
-            </ul>
+            </div>
           </div>
+        </nav> -->
 
-          <div class="dropdown dropdown-hover">
-            <label tabindex="0" class="flex flex-row items-center gap-2"
-              >Resources
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 36 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 2.5L18 17.5L33 2.5"
-                  stroke="black"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a
-                  >Products
-                  <div class="badge badge-info badge-sm badge-noti">1</div></a
-                >
-              </li>
-              <li><a>Products 2</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown dropdown-hover">
-            <label tabindex="0" class="flex flex-row items-center gap-2"
-              >Special Offers
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 36 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 2.5L18 17.5L33 2.5"
-                  stroke="black"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a
-                  >Products
-                  <div class="badge badge-info badge-sm badge-noti">1</div></a
-                >
-              </li>
-              <li><a>Products 2</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown dropdown-hover">
-            <label tabindex="0" class="flex flex-row items-center gap-2"
-              >Catalogs
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 36 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 2.5L18 17.5L33 2.5"
-                  stroke="black"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a
-                  >Products
-                  <div class="badge badge-info badge-sm badge-noti">1</div></a
-                >
-              </li>
-              <li><a>Products 2</a></li>
-            </ul>
-          </div>
-
-          <div class="dropdown dropdown-hover">
-            <label tabindex="0" class="flex flex-row items-center gap-2"
-              >Better MRO
-              <svg
-                width="10"
-                height="10"
-                viewBox="0 0 36 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 2.5L18 17.5L33 2.5"
-                  stroke="black"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a
-                  >Products
-                  <div class="badge badge-info badge-sm badge-noti">1</div></a
-                >
-              </li>
-              <li><a>Products 2</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="ml-auto">
-          Need Help? Call Us<a
-            href="tel:1-800-645-7270"
-            class="text-primary font-bold"
-            >1-800-645-7270</a
+        <nav class="navbar bg-base-100 shadow-sm">
+          <div
+            id="msc-nav"
+            class="flex justify-between flex-1 container mx-auto"
           >
-        </div>
-      </div>
-    </nav>
+            <div class="w-9/12 flex gap-4 items-center">
+              <a href="#">
+                <img
+                  src="https://cdn.mscdirect.com/global/v2/img/header/msc-logo.svg?im=Resize,width=212,height=46"
+                  alt="Logo"
+                  class="h-10 w-auto"
+                />
+              </a>
 
-    <nav class="navbar bg-base-100 shadow-sm">
-      <div class="flex justify-between flex-1 container mx-auto">
-        <div class="w-4/12 flex gap-4">
-          <a href="#">
-            <img
-              src="https://cdn.mscdirect.com/global/v2/img/header/msc-logo.svg?im=Resize,width=212,height=46"
-              alt="Logo"
-              class="h-10 w-auto"
-            />
-          </a>
-          <button class="btn btn-outline btn-primary">
-            Shop All Products
-            <svg
-              width="10"
-              height="10"
-              viewBox="0 0 36 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 2.5L18 17.5L33 2.5"
-                stroke="currentColor"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <div class="w-4/12">
-          <div class="form-control w-full flex">
-            <input
-              type="text"
-              placeholder="Serach for products..."
-              class="input input-bordered w-full"
-            />
-          </div>
-        </div>
-
-        <div class="w-4/12 flex gap-4 justify-end">
-          <!-- CARRITO -->
-          <div class="dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <div class="indicator">
+              <label
+                for="msc-drawer"
+                class="btn btn-ghost drawer-button lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  viewBox="0 0 640 640"
+                  fill="black"
+                  width="24"
+                  height="24"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.217 1.32l.083.07a1 1 0 001.32-.083L9 15h6l1.293 1.293a1 1 0 001.497-1.32L17 13M7 13h10"
+                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
                   />
                 </svg>
-                <!-- <span class="badge badge-sm indicator-item">3</span> -->
-              </div>
-            </label>
-          </div>
+              </label>
 
-          <!-- PROFILE LOGGEDOUT -->
-          <button
-            class="btn btn-circle avatar logged-in"
-            popovertarget="popover-2"
-            style="anchor-name: --anchor-2"
-          >
-            <div class="w-10 rounded-full">
-              <img src="https://placehold.co/64x64?text=OW" />
+              <!-- <button class="btn btn-outline btn-primary">
+                Shop All Products
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 36 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 2.5L18 17.5L33 2.5"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button> -->
+              <div class="flex gap-6 text-sm">
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Shop All Products
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a
+                        >Products
+                        <div class="badge badge-info badge-sm badge-noti">
+                          1
+                        </div></a
+                      >
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Solutions
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a
+                        >Products
+                        <div class="badge badge-info badge-sm badge-noti">
+                          1
+                        </div></a
+                      >
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Resources
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a
+                        >Products
+                        <div class="badge badge-info badge-sm badge-noti">
+                          1
+                        </div></a
+                      >
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Special Offers
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a
+                        >Products
+                        <div class="badge badge-info badge-sm badge-noti">
+                          1
+                        </div></a
+                      >
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Catalogs
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a
+                        >Products
+                        <div class="badge badge-info badge-sm badge-noti">
+                          1
+                        </div></a
+                      >
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Better MRO
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a
+                        >Products
+                        <div class="badge badge-info badge-sm badge-noti">
+                          1
+                        </div></a
+                      >
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </button>
-          <ul
-            class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-in"
-            popover
-            id="popover-2"
-            style="position-anchor: --anchor-2"
-          >
-            <li onclick="loginLogout()"><a>Log in</a></li>
-          </ul>
-          <!-- PERFIL LOGGEDIN -->
-          <button
-            class="btn btn-circle avatar logged-out hidden"
-            popovertarget="popover-1"
-            style="anchor-name: --anchor-1"
-          >
-            <div class="w-10 rounded-full">
-              <img src="./assets/cesarian.png" />
+
+            <div class="w-3/12 flex gap-4 justify-end">
+              <div class="form-control w-full flex">
+                <input
+                  onclick="toggleSearchBar()"
+                  type="text"
+                  placeholder="Serach for products..."
+                  class="input input-bordered w-full"
+                />
+              </div>
+              <!-- CARRITO -->
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.217 1.32l.083.07a1 1 0 001.32-.083L9 15h6l1.293 1.293a1 1 0 001.497-1.32L17 13M7 13h10"
+                      />
+                    </svg>
+                    <!-- <span class="badge badge-sm indicator-item">3</span> -->
+                  </div>
+                </label>
+              </div>
+
+              <!-- PROFILE LOGGEDOUT -->
+              <button
+                class="btn btn-circle avatar logged-in"
+                popovertarget="popover-2"
+                style="anchor-name: --anchor-2"
+              >
+                <div class="w-10 rounded-full">
+                  <img src="https://placehold.co/64x64?text=OW" />
+                </div>
+              </button>
+              <ul
+                class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-in"
+                popover
+                id="popover-2"
+                style="position-anchor: --anchor-2"
+              >
+                <li onclick="loginLogout()"><a>Log in</a></li>
+              </ul>
+              <!-- PERFIL LOGGEDIN -->
+              <button
+                class="btn btn-circle avatar logged-out hidden"
+                popovertarget="popover-1"
+                style="anchor-name: --anchor-1"
+              >
+                <div class="w-10 rounded-full">
+                  <img src="./assets/cesarian.png" />
+                </div>
+              </button>
+              <ul
+                class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-out hidden"
+                popover
+                id="popover-1"
+                style="position-anchor: --anchor-1"
+              >
+                <li><a>Profile</a></li>
+                <li><a>Settings</a></li>
+                <li onclick="loginLogout()"><a>Log out</a></li>
+              </ul>
             </div>
-          </button>
-          <ul
-            class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-out hidden"
-            popover
-            id="popover-1"
-            style="position-anchor: --anchor-1"
-          >
-            <li><a>Profile</a></li>
-            <li><a>Settings</a></li>
-            <li onclick="loginLogout()"><a>Log out</a></li>
-          </ul>
-        </div>
+          </div>
+          <!-- FULL WIDTH SEARCH -->
+          <div id="msc-search" class="form-control w-full hidden gap-2">
+            <div class="flex gap-2 mx-auto justify-center max-w-md">
+              <input
+                type="text"
+                placeholder="Serach for products..."
+                class="input input-bordered w-full"
+              />
+              <button class="btn btn-ghost" onclick="toggleSearchBar()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  width="14"
+                  height="14"
+                >
+                  <path
+                    d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <script>
+          const mscSearch = document.getElementById("msc-search");
+          const mscNav = document.getElementById("msc-nav");
+
+          const toggleSearchBar = () => {
+            mscNav.classList.toggle("hidden");
+            mscSearch.classList.toggle("hidden");
+          };
+        </script>
       </div>
-    </nav>
+
+      <div class="drawer-side">
+        <label
+          for="msc-drawer"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+          <!-- Sidebar content here -->
+          <li><a>Sidebar Item 1</a></li>
+          <li><a>Sidebar Item 2</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
