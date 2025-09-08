@@ -24,3 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const isLoggedIn = stored === 'true'; // defaults to false when not set
 	applyAuthState(isLoggedIn);
 });
+
+// Search bar results toggle
+const toggleSearchResults = () => {
+	const input = document.getElementById('msc-search-input');
+	const searchBar = document.getElementById('msc-search-results');
+	searchBar.classList.toggle('hidden');
+	input.focus();
+};
