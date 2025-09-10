@@ -1,18 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Daisy UI | Homepage (Daisy-only)</title>
-		<link rel="stylesheet" href="dist/output.css" />
-		<link rel="shortcut icon" href="https://www.mscdirect.com/favicon.ico" type="image/x-icon" />
-	</head>
-	<body class="bg-white">
-		<div class="drawer">
-			<input id="msc-drawer" type="checkbox" class="drawer-toggle" />
-			<div class="drawer-content">
-				<!-- Page content here -->
-				<!-- <nav class="w-full bg-base-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daisy UI | Homepage (Daisy-only)</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.mscdirect.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-white">
+    <div class="drawer">
+      <input id="msc-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <!-- Page content here -->
+        <!-- <nav class="w-full bg-base-200">
           <div class="container mx-auto flex p-2 text-xs">
             <div class="ml-auto">
               Need Help? Call Us<a
@@ -24,22 +28,31 @@
           </div>
         </nav> -->
 
-				<nav class="navbar bg-base-100 shadow-sm flex">
-					<div id="msc-nav" class="w-full flex flex-row justify-between">
-						<div class="w-full flex gap-4 items-center">
-							<label for="msc-drawer" class="btn btn-ghost drawer-button lg:hidden">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="black" width="24" height="24">
-									<path
-										d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-									/>
-								</svg>
-							</label>
+        <nav class="navbar bg-base-100 shadow-sm flex">
+          <div id="msc-nav" class="w-full flex flex-row justify-between">
+            <div class="w-full flex gap-4 items-center">
+              <label
+                for="msc-drawer"
+                class="btn btn-ghost drawer-button lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  fill="black"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+                  />
+                </svg>
+              </label>
 
-							<a href="#">
-								<img src="assets/logo-msc.svg" alt="Logo" class="w-[80px]" />
-							</a>
+              <a href="#">
+                <img src="assets/logo-msc.svg" alt="Logo" class="w-[80px]" />
+              </a>
 
-							<!-- <button class="btn btn-outline btn-primary">
+              <!-- <button class="btn btn-outline btn-primary">
                 Shop All Products
                 <svg
                   width="10"
@@ -57,476 +70,984 @@
                   />
                 </svg>
               </button> -->
-							<div class="gap-6 text-sm hidden lg:flex">
-								<div class="dropdown dropdown-hover">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Shop All Products
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<div
-										tabindex="0"
-										class="dropdown-content z-50 bg-base-100 shadow-xl rounded-box mt-0 w-screen max-w-6xl"
-									>
-										<!-- GRID DE CATEGORÍAS -->
-										<div class="flex flex-col">
-											<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 max-h-[70vh] overflow-y-auto">
-												<!-- Columna 1 -->
-												<ul class="menu bg-base-100 rounded-box">
-													<li>
-														<a href="/ProductsHomeView">All Product Categories </a>
-													</li>
-													<li>
-														<a href="/browse/Abrasives?navid=2100008">Abrasives</a>
-													</li>
-													<li>
-														<a href="/browse/Clamping-Workholding-Positioning?navid=2108152"
-															>Clamping, Workholding & Positioning</a
-														>
-													</li>
-													<li>
-														<a href="/browse/Fasteners?navid=2108705">Fasteners</a>
-													</li>
-													<li>
-														<a href="/browse/Fleet-Maintenance?navid=2103521">Fleet Maintenance</a>
-													</li>
-													<li><a href="/browse/HVAC?navid=2104085">HVAC</a></li>
-													<li>
-														<a href="/browse/Hand-Tools?navid=2102364">Hand Tools</a>
-													</li>
-													<li>
-														<a href="/browse/Hardware?navid=2103522">Hardware</a>
-													</li>
-													<li>
-														<a href="/browse/Holemaking?navid=2106067">Holemaking</a>
-													</li>
-												</ul>
+              <div class="gap-6 text-sm hidden lg:flex">
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Shop All Products
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <div
+                    tabindex="0"
+                    class="dropdown-content z-50 bg-base-100 shadow-xl rounded-box mt-0 w-screen max-w-6xl"
+                  >
+                    <!-- GRID DE CATEGORÍAS -->
+                    <div class="flex flex-col">
+                      <div
+                        class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 max-h-[70vh] overflow-y-auto"
+                      >
+                        <!-- Columna 1 -->
+                        <ul class="menu bg-base-100 rounded-box">
+                          <li>
+                            <a href="/ProductsHomeView"
+                              >All Product Categories
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/browse/Abrasives?navid=2100008"
+                              >Abrasives</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Clamping-Workholding-Positioning?navid=2108152"
+                              >Clamping, Workholding & Positioning</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Fasteners?navid=2108705"
+                              >Fasteners</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Fleet-Maintenance?navid=2103521"
+                              >Fleet Maintenance</a
+                            >
+                          </li>
+                          <li><a href="/browse/HVAC?navid=2104085">HVAC</a></li>
+                          <li>
+                            <a href="/browse/Hand-Tools?navid=2102364"
+                              >Hand Tools</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Hardware?navid=2103522"
+                              >Hardware</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Holemaking?navid=2106067"
+                              >Holemaking</a
+                            >
+                          </li>
+                        </ul>
 
-												<!-- Columna 2 -->
-												<ul class="menu bg-base-100 border-l border-gray-300">
-													<li>
-														<a href="/browse/Hose-Tube-Fittings-Valves?navid=2104084">Hose, Tube, Fittings & Valves</a>
-													</li>
-													<li>
-														<a href="/browse/Indexable-Cutting-Tools?navid=2107070">Indexable Cutting Tools</a>
-													</li>
-													<li>
-														<a href="/browse/Janitorial-Facility-Maintenance?navid=2106462"
-															>Janitorial & Facility Maintenance</a
-														>
-													</li>
-													<li>
-														<a href="/browse/Lighting-Electrical?navid=2109056">Lighting & Electrical</a>
-													</li>
-													<li>
-														<a href="/browse/Lubricants-Coolants-Fluids?navid=2107390">Lubricants, Coolants & Fluids</a>
-													</li>
-													<li>
-														<a href="/browse/Machinery?navid=2107502">Machinery</a>
-													</li>
-													<li>
-														<a href="/browse/Marking-Labeling?navid=2103523">Marking & Labeling</a>
-													</li>
-													<li>
-														<a href="/browse/Material-Handling-Storage?navid=2105165">Material Handling & Storage</a>
-													</li>
-													<li>
-														<a href="/browse/Measuring-Inspecting?navid=2107563">Measuring & Inspecting</a>
-													</li>
-												</ul>
+                        <!-- Columna 2 -->
+                        <ul class="menu bg-base-100 border-l border-gray-300">
+                          <li>
+                            <a
+                              href="/browse/Hose-Tube-Fittings-Valves?navid=2104084"
+                              >Hose, Tube, Fittings & Valves</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Indexable-Cutting-Tools?navid=2107070"
+                              >Indexable Cutting Tools</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Janitorial-Facility-Maintenance?navid=2106462"
+                              >Janitorial & Facility Maintenance</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Lighting-Electrical?navid=2109056"
+                              >Lighting & Electrical</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Lubricants-Coolants-Fluids?navid=2107390"
+                              >Lubricants, Coolants & Fluids</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Machinery?navid=2107502"
+                              >Machinery</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Marking-Labeling?navid=2103523"
+                              >Marking & Labeling</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Material-Handling-Storage?navid=2105165"
+                              >Material Handling & Storage</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Measuring-Inspecting?navid=2107563"
+                              >Measuring & Inspecting</a
+                            >
+                          </li>
+                        </ul>
 
-												<!-- Columna 3 -->
-												<ul class="menu bg-base-100 border-l border-gray-300">
-													<li>
-														<a href="/browse/Milling?navid=2106224">Milling</a>
-													</li>
-													<li>
-														<a href="/browse/Motion-Control-Fluid-Power?navid=2104087">Motion Control & Fluid Power</a>
-													</li>
-													<li>
-														<a href="/browse/Plumbing-Pumps-Filtration?navid=2104086">Plumbing, Pumps & Filtration</a>
-													</li>
-													<li>
-														<a href="/browse/Power-Tools?navid=2107244">Power Tools</a>
-													</li>
-													<li>
-														<a href="/browse/Raw-Materials?navid=2101662">Raw Materials</a>
-													</li>
-													<li>
-														<a href="/browse/Safety?navid=2106309">Safety</a>
-													</li>
-													<li>
-														<a href="/browse/Saw-Blades?navid=2105933">Saw Blades</a>
-													</li>
-													<li>
-														<a href="/browse/Shipping-Office-Supplies?navid=2104088">Shipping & Office Supplies</a>
-													</li>
-													<li>
-														<a href="/browse/Tapes-Adhesives?navid=2108682">Tapes & Adhesives</a>
-													</li>
-												</ul>
+                        <!-- Columna 3 -->
+                        <ul class="menu bg-base-100 border-l border-gray-300">
+                          <li>
+                            <a href="/browse/Milling?navid=2106224">Milling</a>
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Motion-Control-Fluid-Power?navid=2104087"
+                              >Motion Control & Fluid Power</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Plumbing-Pumps-Filtration?navid=2104086"
+                              >Plumbing, Pumps & Filtration</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Power-Tools?navid=2107244"
+                              >Power Tools</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Raw-Materials?navid=2101662"
+                              >Raw Materials</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Safety?navid=2106309">Safety</a>
+                          </li>
+                          <li>
+                            <a href="/browse/Saw-Blades?navid=2105933"
+                              >Saw Blades</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="/browse/Shipping-Office-Supplies?navid=2104088"
+                              >Shipping & Office Supplies</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Tapes-Adhesives?navid=2108682"
+                              >Tapes & Adhesives</a
+                            >
+                          </li>
+                        </ul>
 
-												<!-- Columna 4 -->
-												<ul class="menu bg-base-100 border-l border-gray-300">
-													<li>
-														<a href="/browse/Threading?navid=2105963">Threading</a>
-													</li>
-													<li>
-														<a href="/browse/Tool-Holding?navid=2108494">Tool Holding</a>
-													</li>
-													<li>
-														<a href="/browse/Turning-Boring?navid=2105881">Turning & Boring</a>
-													</li>
-													<li>
-														<a href="/browse/Welding-Soldering?navid=2100524">Welding & Soldering</a>
-													</li>
-												</ul>
-											</div>
-											<!-- Sección inferior con iconos -->
-											<div class="grid grid-cols-2 md:flex gap-4 border-t bg-gray-100 p-4">
-												<a href="/r/clearance-specials" class="flex items-center gap-2">
-													<i class="fa fa-tag text-primary"></i> Clearance
-												</a>
-												<a href="/corporate/industrial-suppliers-line-card" class="flex items-center gap-2">
-													<img src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-book.svg" class="w-4 h-4" />
-													All Brands
-												</a>
-												<a href="/products/new-items" class="flex items-center gap-2">
-													<span class="text-xs bg-blue-600 text-white px-1 rounded">NEW</span>
-													Products
-												</a>
-												<a href="/products/exclusive-brands" class="flex items-center gap-2">
-													<img
-														src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-stars.svg"
-														class="w-4 h-4"
-													/>
-													Exclusive Brands
-												</a>
-												<a href="/ui/myaccount/newquote" class="flex items-center gap-2">
-													<img
-														src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-quote.svg"
-														class="w-4 h-4"
-													/>
-													Request a Quote
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
+                        <!-- Columna 4 -->
+                        <ul class="menu bg-base-100 border-l border-gray-300">
+                          <li>
+                            <a href="/browse/Threading?navid=2105963"
+                              >Threading</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Tool-Holding?navid=2108494"
+                              >Tool Holding</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Turning-Boring?navid=2105881"
+                              >Turning & Boring</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/browse/Welding-Soldering?navid=2100524"
+                              >Welding & Soldering</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Sección inferior con iconos -->
+                      <div
+                        class="grid grid-cols-2 md:flex gap-4 border-t bg-gray-100 p-4"
+                      >
+                        <a
+                          href="/r/clearance-specials"
+                          class="flex items-center gap-2"
+                        >
+                          <i class="fa fa-tag text-primary"></i> Clearance
+                        </a>
+                        <a
+                          href="/corporate/industrial-suppliers-line-card"
+                          class="flex items-center gap-2"
+                        >
+                          <img
+                            src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-book.svg"
+                            class="w-4 h-4"
+                          />
+                          All Brands
+                        </a>
+                        <a
+                          href="/products/new-items"
+                          class="flex items-center gap-2"
+                        >
+                          <span
+                            class="text-xs bg-blue-600 text-white px-1 rounded"
+                            >NEW</span
+                          >
+                          Products
+                        </a>
+                        <a
+                          href="/products/exclusive-brands"
+                          class="flex items-center gap-2"
+                        >
+                          <img
+                            src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-stars.svg"
+                            class="w-4 h-4"
+                          />
+                          Exclusive Brands
+                        </a>
+                        <a
+                          href="/ui/myaccount/newquote"
+                          class="flex items-center gap-2"
+                        >
+                          <img
+                            src="https://cdn.mscdirect.com/global/v2/img/nav/topnav-icon-quote.svg"
+                            class="w-4 h-4"
+                          />
+                          Request a Quote
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-								<div class="dropdown dropdown-hover">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Solutions
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<ul tabindex="0" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
-										<li>
-											<a>Products </a>
-										</li>
-										<li><a>Products 2</a></li>
-									</ul>
-								</div>
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Solutions
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Products </a>
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
 
-								<div class="dropdown dropdown-hover">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Resources
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<ul tabindex="0" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
-										<li>
-											<a>Products </a>
-										</li>
-										<li><a>Products 2</a></li>
-									</ul>
-								</div>
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Resources
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Products </a>
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
 
-								<div class="dropdown dropdown-hover">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Special Offers
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<ul tabindex="0" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
-										<li>
-											<a>Products </a>
-										</li>
-										<li><a>Products 2</a></li>
-									</ul>
-								</div>
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Special Offers
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Products </a>
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
 
-								<div class="dropdown dropdown-hover">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Catalogs
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<ul tabindex="0" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
-										<li>
-											<a>Products </a>
-										</li>
-										<li><a>Products 2</a></li>
-									</ul>
-								</div>
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Catalogs
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Products </a>
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
 
-								<div class="dropdown dropdown-hover">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Better MRO
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<ul tabindex="0" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
-										<li>
-											<a>Products </a>
-										</li>
-										<li><a>Products 2</a></li>
-									</ul>
-								</div>
-								<!-- Notifications -->
-								<div class="dropdown dropdown-hover badge-noti">
-									<label tabindex="0" class="flex flex-row items-center gap-2"
-										>Notifications
-										<div class="badge badge-sm badge-info">2</div>
-										<svg width="10" height="10" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3 2.5L18 17.5L33 2.5"
-												stroke="black"
-												stroke-width="5"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											/>
-										</svg>
-									</label>
-									<ul tabindex="0" class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52">
-										<li>
-											<a>Products </a>
-										</li>
-										<li><a>Products 2</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
+                <div class="dropdown dropdown-hover">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Better MRO
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Products </a>
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+                <!-- Notifications -->
+                <div class="dropdown dropdown-hover badge-noti">
+                  <label tabindex="0" class="flex flex-row items-center gap-2"
+                    >Notifications
+                    <div class="badge badge-sm badge-info">2</div>
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 36 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 2.5L18 17.5L33 2.5"
+                        stroke="black"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Products </a>
+                    </li>
+                    <li><a>Products 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-						<div class="w-2/12 flex gap-2 lg:gap-4 justify-end">
-							<!-- SEARCHBAR -->
-							<div class="form-control w-full hidden lg:flex relative">
-								<input
-									onclick="toggleSearchBar()"
-									type="text"
-									placeholder="Serach..."
-									class="input input-bordered w-full"
-								/>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 640 640"
-									class="w-5 fill-current absolute right-2 top-1/2 -translate-y-1/2"
-								>
-									<path
-										d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-									/>
-								</svg>
-							</div>
-							<!-- SEARCHBAR ICON -->
+            <div class="w-2/12 flex gap-2 lg:gap-4 justify-end">
+              <!-- SEARCHBAR -->
+              <div class="form-control w-full hidden lg:flex relative">
+                <input
+                  onclick="toggleSearchBar()"
+                  type="text"
+                  placeholder="Serach..."
+                  class="input input-bordered w-full"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-5 fill-current absolute right-2 top-1/2 -translate-y-1/2"
+                >
+                  <path
+                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                  />
+                </svg>
+              </div>
+              <!-- SEARCHBAR ICON -->
 
-							<button class="btn btn-ghost lg:hidden" onclick="toggleSearchBar()">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-5 fill-current">
-									<path
-										d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-									/>
-								</svg>
-							</button>
+              <button
+                class="btn btn-ghost lg:hidden"
+                onclick="toggleSearchBar()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-5 fill-current"
+                >
+                  <path
+                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                  />
+                </svg>
+              </button>
 
-							<!-- CARRITO -->
-							<div class="dropdown dropdown-end">
-								<label tabindex="0" class="btn btn-ghost btn-circle">
-									<div class="indicator">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											class="h-5 w-5"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke="currentColor"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.217 1.32l.083.07a1 1 0 001.32-.083L9 15h6l1.293 1.293a1 1 0 001.497-1.32L17 13M7 13h10"
-											/>
-										</svg>
-										<!-- <span class="badge badge-sm indicator-item">3</span> -->
-									</div>
-								</label>
-							</div>
+              <!-- CARRITO -->
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.217 1.32l.083.07a1 1 0 001.32-.083L9 15h6l1.293 1.293a1 1 0 001.497-1.32L17 13M7 13h10"
+                      />
+                    </svg>
+                    <!-- <span class="badge badge-sm indicator-item">3</span> -->
+                  </div>
+                </label>
+              </div>
 
-							<!-- PROFILE LOGGEDOUT -->
-							<button
-								class="btn btn-circle avatar logged-out"
-								popovertarget="popover-2"
-								style="anchor-name: --anchor-2"
-							>
-								<div class="w-10 rounded-full">
-									<img src="https://placehold.co/64x64?text=OW" />
-								</div>
-							</button>
-							<ul
-								class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-out"
-								popover
-								id="popover-2"
-								style="position-anchor: --anchor-2"
-							>
-								<li onclick="loginLogout()"><a>Log in</a></li>
-							</ul>
-							<!-- PERFIL LOGGEDIN -->
-							<button
-								class="btn btn-circle avatar logged-in hidden"
-								popovertarget="popover-1"
-								style="anchor-name: --anchor-1"
-							>
-								<div class="w-10 rounded-full">
-									<img src="./assets/cesarian.png" />
-								</div>
-							</button>
-							<ul
-								class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-in hidden"
-								popover
-								id="popover-1"
-								style="position-anchor: --anchor-1"
-							>
-								<li><a>Profile</a></li>
-								<li><a>Settings</a></li>
-								<li onclick="loginLogout()"><a>Log out</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- FULL WIDTH SEARCH -->
-					<div id="msc-search" class="form-control w-full hidden gap-2">
-						<div class="flex gap-2 mx-auto justify-center max-w-md">
-							<div class="form-control w-full relative">
-								<input
-									id="msc-search-input"
-									onclick="toggleSearchResults()"
-									type="text"
-									placeholder="Serach..."
-									class="input input-bordered w-full"
-								/>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 640 640"
-									class="w-5 fill-current absolute right-2 top-1/2 -translate-y-1/2"
-								>
-									<path
-										d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
-									/>
-								</svg>
-								<!-- Search results -->
-								<div id="msc-search-results" class="absolute top-7/6 w-full h-fit hidden z-50 p-4 bg-white">
-									<p class="text-gray-400 text-xs">TRENDING SEARCHES</p>
-									<div class="divider m-0"></div>
-									<p class="text-sm py-1 hover:bg-stone-100 cursor-pointer"><span class="mr-2">↗</span>End Mill</p>
-									<p class="text-sm py-1 hover:bg-stone-100 cursor-pointer">
-										<span class="mr-2">↗</span>Square End Mill
-									</p>
-									<p class="text-sm py-1 hover:bg-stone-100 cursor-pointer"><span class="mr-2">↗</span>Mitutoyo</p>
-									<p class="text-sm py-1 hover:bg-stone-100 cursor-pointer"><span class="mr-2">↗</span>Taps</p>
-									<p class="text-sm py-1 hover:bg-stone-100 cursor-pointer"><span class="mr-2">↗</span>Drill</p>
-									<p class="text-gray-400 text-xs pt-2">POPULAR CATEGORIES</p>
-									<div class="divider m-0"></div>
-									<div class="flex flex-row gap-8">
-										<div class="flex flex-col gap-1 items-center">
-											<img src="./assets/homepage/hole-making.png" class="size-16" />
-											<p class="text-xs">Holemaking</p>
-										</div>
-										<div class="flex flex-col gap-1 items-center">
-											<img src="./assets/homepage/milling.png" class="size-16" />
-											<p class="text-xs">Milling</p>
-										</div>
-										<div class="flex flex-col gap-1 items-center">
-											<img src="./assets/homepage/abrasives.png" class="size-16" />
-											<p class="text-xs">Abrasives</p>
-										</div>
-										<div class="flex flex-col gap-1 items-center">
-											<img src="./assets/homepage/safety.png" class="size-16" />
-											<p class="text-xs">Safety</p>
-										</div>
-									</div>
-								</div>
-							</div>
+              <!-- PROFILE LOGGEDOUT -->
+              <button
+                class="btn btn-circle avatar logged-out"
+                popovertarget="popover-2"
+                style="anchor-name: --anchor-2"
+              >
+                <div class="w-10 rounded-full">
+                  <img src="https://placehold.co/64x64?text=OW" />
+                </div>
+              </button>
+              <ul
+                class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-out"
+                popover
+                id="popover-2"
+                style="position-anchor: --anchor-2"
+              >
+                <li onclick="loginLogout()"><a>Log in</a></li>
+              </ul>
+              <!-- PERFIL LOGGEDIN -->
+              <button
+                class="btn btn-circle avatar logged-in hidden"
+                popovertarget="popover-1"
+                style="anchor-name: --anchor-1"
+              >
+                <div class="w-10 rounded-full">
+                  <img src="./assets/cesarian.png" />
+                </div>
+              </button>
+              <ul
+                class="dropdown fixed -left-12 w-fit menu rounded-box bg-base-100 shadow-sm logged-in hidden"
+                popover
+                id="popover-1"
+                style="position-anchor: --anchor-1"
+              >
+                <li><a>Profile</a></li>
+                <li><a>Settings</a></li>
+                <li onclick="loginLogout()"><a>Log out</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- FULL WIDTH SEARCH -->
+          <div id="msc-search" class="form-control w-full hidden gap-2">
+            <div class="flex gap-2 mx-auto justify-center max-w-md">
+              <div class="form-control w-full relative">
+                <input
+                  id="msc-search-input"
+                  onclick="toggleSearchResults()"
+                  type="text"
+                  placeholder="Serach..."
+                  class="input input-bordered w-full"
+                />
+                <span
+                  class="absolute right-8 top-1/2 -translate-y-1/2 text-xs cursor-pointer z-30 text-gray-500"
+                  id="msc-search-clear"
+                  onclick="clearSearch()"
+                >
+                  clear |
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-5 fill-current absolute right-2 top-1/2 -translate-y-1/2 z-30"
+                >
+                  <path
+                    d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+                  />
+                </svg>
+                <!-- Search results -->
+                <div
+                  id="msc-search-results"
+                  class="absolute top-7/6 w-full h-fit hidden z-50 p-4 bg-white"
+                >
+                  <p class="text-gray-400 text-xs">TRENDING SEARCHES</p>
+                  <div class="divider m-0"></div>
+                  <p class="text-sm py-1 hover:bg-stone-100 cursor-pointer">
+                    <span class="mr-2">↗</span>End Mill
+                  </p>
+                  <p class="text-sm py-1 hover:bg-stone-100 cursor-pointer">
+                    <span class="mr-2">↗</span>Square End Mill
+                  </p>
+                  <p class="text-sm py-1 hover:bg-stone-100 cursor-pointer">
+                    <span class="mr-2">↗</span>Mitutoyo
+                  </p>
+                  <p class="text-sm py-1 hover:bg-stone-100 cursor-pointer">
+                    <span class="mr-2">↗</span>Taps
+                  </p>
+                  <p class="text-sm py-1 hover:bg-stone-100 cursor-pointer">
+                    <span class="mr-2">↗</span>Drill
+                  </p>
+                  <p class="text-gray-400 text-xs pt-2">POPULAR CATEGORIES</p>
+                  <div class="divider m-0"></div>
+                  <div class="flex flex-row gap-8">
+                    <div class="flex flex-col gap-1 items-center">
+                      <img
+                        src="./assets/homepage/hole-making.png"
+                        class="size-16"
+                      />
+                      <p class="text-xs">Holemaking</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                      <img
+                        src="./assets/homepage/milling.png"
+                        class="size-16"
+                      />
+                      <p class="text-xs">Milling</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                      <img
+                        src="./assets/homepage/abrasives.png"
+                        class="size-16"
+                      />
+                      <p class="text-xs">Abrasives</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                      <img src="./assets/homepage/safety.png" class="size-16" />
+                      <p class="text-xs">Safety</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<button class="btn btn-ghost" onclick="toggleSearchBar()">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="14" height="14">
-									<path
-										d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z"
-									/>
-								</svg>
-							</button>
-						</div>
-					</div>
-				</nav>
+              <button class="btn btn-ghost" onclick="toggleSearchBar()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  width="14"
+                  height="14"
+                >
+                  <path
+                    d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
 
-				<script>
-					const mscSearch = document.getElementById('msc-search');
-					const mscNav = document.getElementById('msc-nav');
+        <script>
+          const mscSearch = document.getElementById("msc-search");
+          const mscNav = document.getElementById("msc-nav");
 
-					const toggleSearchBar = () => {
-						mscNav.classList.toggle('hidden');
-						mscSearch.classList.toggle('hidden');
-					};
-				</script>
-			</div>
+          const toggleSearchBar = () => {
+            mscNav.classList.toggle("hidden");
+            mscSearch.classList.toggle("hidden");
+          };
 
-			<div class="drawer-side">
-				<label for="msc-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-				<ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-					<!-- Sidebar content here -->
-					<li><a>Sidebar Item 1</a></li>
-					<li><a>Sidebar Item 2</a></li>
-				</ul>
-			</div>
-		</div>
-	</body>
-	<script src="js/index.js"></script>
+          const clearSearch = () => {
+            const mscSearchInput = document.getElementById("msc-search-input");
+            mscSearchInput.value = "";
+          };
+        </script>
+      </div>
+
+      <div class="drawer-side">
+        <label
+          for="msc-drawer"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul
+          id="msc-menu"
+          class="bg-base-200 text-base-content min-h-full w-80 p-2 space-y-3 flex flex-col"
+        >
+          <li class="my-4">
+            <svg
+              width="88"
+              height="24"
+              viewBox="0 0 88 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M32.1692 6.80235L27.2722 23.9866H34.4233L41.2598 0H28.7034L20.8761 13.1274L21.8946 0H10.3594L0 23.9863L7.09041 23.9866L14.8571 6.80235L13.6873 23.9866H20.8994L32.1692 6.80235ZM61.2057 15.6857C62.2154 12.3545 59.7221 8.99044 56.2412 8.99044L55.9629 8.99066H49.5914C48.711 8.97645 48.4881 8.40899 48.6797 7.78268L48.9207 6.93761C49.121 6.30374 49.5819 5.71919 50.3901 5.73607H62.4492L65.0662 0H48.2369C45.1619 0.13881 43.1313 2.29603 42.5927 4.73108L41.3879 8.89294L41.3832 8.91004C40.4535 12.1662 42.7744 14.7281 46.1338 14.7281L46.3761 14.7327H53.4037C53.9774 14.7398 54.4125 14.9371 54.1973 15.6926L53.7495 17.2633C53.5299 18.0015 53.0361 18.233 52.4334 18.2563H39.3326L37.7015 23.9868L54.7123 23.9861C56.8051 23.9435 59.3899 21.9493 59.9937 19.9426L61.2057 15.6857ZM62.9935 18.1692C62.0636 21.4251 64.3847 23.987 67.7441 23.987L78.681 23.9866C80.7862 23.9866 83.3868 21.9613 83.9971 19.9327L85.0731 16.1939H78.4811L78.1284 17.2744C77.933 17.9258 77.4861 18.2352 76.7341 18.2363H71.233C70.3417 18.2363 70.083 17.7217 70.2698 17.0359L73.1166 7.10396C73.34 6.31529 73.7642 5.73229 74.6555 5.73229H80.3329C81.0872 5.73229 81.3544 6.04145 81.1685 6.69286L80.7565 8.19311H87.3465L87.7738 6.69175C88.7837 3.36053 86.2902 0 82.8095 0H72.6558C70.0039 0 67.673 1.75767 66.9441 4.30799L62.9935 18.1692Z"
+                fill="#FF3333"
+              ></path>
+            </svg>
+          </li>
+
+          <li>
+            <button
+              class="btn w-full justify-between border-white bg-white shadow-sm"
+              onclick="toggleSubMenu('shop-all')"
+            >
+              Shop All Products
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="ml-2"
+              >
+                <path
+                  d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="btn w-full justify-between border-white bg-white shadow-sm"
+              onclick="toggleSubMenu('solutions')"
+            >
+              Solutions
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="ml-2"
+              >
+                <path
+                  d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="btn w-full justify-between border-white bg-white shadow-sm"
+              onclick="toggleSubMenu('resources')"
+            >
+              Resources
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="ml-2"
+              >
+                <path
+                  d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="btn w-full justify-between border-white bg-white shadow-sm"
+              onclick="toggleSubMenu('special-offers')"
+            >
+              Special Offers
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="ml-2"
+              >
+                <path
+                  d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="btn w-full justify-between border-white bg-white shadow-sm"
+              onclick="toggleSubMenu('catalogs')"
+            >
+              Catalogs
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="ml-2"
+              >
+                <path
+                  d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="btn w-full justify-between border-white bg-white shadow-sm"
+              onclick="toggleSubMenu('better-mro')"
+            >
+              Better MRO
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                width="16"
+                height="16"
+                class="ml-2"
+              >
+                <path
+                  d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <div id="msc-submenu" class="bg-base-200 h-full hidden">
+          <button
+            class="px-6 py-4 text-base flex items-center gap-2"
+            onclick="backToMenu()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              class="w-5"
+            >
+              <path
+                d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"
+              />
+            </svg>
+
+            Back to main menu
+          </button>
+
+          <ul
+            id="shop-all-sub"
+            class="min-h-full w-80 space-y-4 text-sm hidden"
+          >
+            <li class="bg-blue-100 text-blue-600 py-2 px-6">
+              <a
+                href="/ProductsHomeView"
+                class="flex justify-between items-center"
+              >
+                <span>All Product Categories</span>
+
+                <span class="text-black">See all</span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Abrasives?navid=2100008">
+                <span>Abrasives</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Clamping-Workholding-Positioning?navid=2108152">
+                <span>Clamping, Workholding & Positioning</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Fasteners?navid=2108705">
+                <span>Fasteners</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Fleet-Maintenance?navid=2103521">
+                <span>Fleet Maintenance</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/HVAC?navid=2104085">
+                <span>HVAC</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Hand-Tools?navid=2102364">
+                <span>Hand Tools</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Hardware?navid=2103522">
+                <span>Hardware</span>
+                <span></span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Holemaking?navid=2106067">
+                <span>Holemaking</span>
+                <span></span>
+              </a>
+            </li>
+          </ul>
+
+          <ul
+            id="solutions-sub"
+            class="min-h-full w-80 space-y-4 text-sm hidden"
+          >
+            <li class="bg-blue-100 text-blue-600 py-2 px-6">
+              <a
+                href="/ProductsHomeView"
+                class="flex justify-between items-center"
+              >
+                <span>All Solutions</span>
+
+                <span class="text-black">See all</span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Abrasives?navid=2100008">
+                <span>Solutions Item 1</span>
+              </a>
+            </li>
+
+            <li class="py-1 px-6">
+              <a href="/browse/Abrasives?navid=2100008">
+                <span>Solutions Item 2</span>
+              </a>
+            </li>
+          </ul>
+          <ul
+            id="resources-sub"
+            class="min-h-full w-80 space-y-4 text-sm hidden"
+          >
+            <li>Resources</li>
+          </ul>
+          <ul
+            id="special-offers-sub"
+            class="min-h-full w-80 space-y-4 text-sm hidden"
+          >
+            <li>Special Offers</li>
+          </ul>
+          <ul
+            id="catalogs-sub"
+            class="min-h-full w-80 space-y-4 text-sm hidden"
+          >
+            <li>Catalogs</li>
+          </ul>
+          <ul
+            id="better-mro-sub"
+            class="min-h-full w-80 space-y-4 text-sm hidden"
+          >
+            <li>Better MRO</li>
+          </ul>
+        </div>
+
+        <script>
+          const toggleSubMenu = (content) => {
+            const contento = content || "shop-all";
+            const mscMenu = document.getElementById("msc-menu");
+            const mscSubMenu = document.getElementById("msc-submenu");
+
+            // Ocultar todos los contenidos de submenú primero
+            const allSubContents = mscSubMenu.querySelectorAll("[id$='-sub']");
+            allSubContents.forEach((el) => el.classList.add("hidden"));
+
+            // Mostrar el submenú general
+            mscMenu.classList.add("hidden");
+            mscSubMenu.classList.remove("hidden");
+
+            // Mostrar el submenú específico
+            const mscContent = document.getElementById(`${contento}-sub`);
+            if (mscContent) {
+              mscContent.classList.remove("hidden");
+            }
+          };
+
+          const backToMenu = () => {
+            const mscMenu = document.getElementById("msc-menu");
+            const mscSubMenu = document.getElementById("msc-submenu");
+
+            // Ocultar todos los submenús
+            const allSubContents = mscSubMenu.querySelectorAll("[id$='-sub']");
+            allSubContents.forEach((el) => el.classList.add("hidden"));
+
+            // Mostrar menú principal y ocultar submenu
+            mscMenu.classList.remove("hidden");
+            mscSubMenu.classList.add("hidden");
+          };
+        </script>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
 </html>
