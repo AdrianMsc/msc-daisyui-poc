@@ -635,6 +635,340 @@
           </div>
         </nav>
 
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="quick_order_modal.showModal()">
+          open modal
+        </button>
+        <dialog id="quick_order_modal" class="modal">
+          <div class="modal-box max-w-lg relative">
+            <button
+              class="btn btn-circle btn-ghost btn-sm absolute right-4 top-4"
+              onclick="quick_order_modal.close()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <h3 class="text-lg font-bold mb-4">Quick Order</h3>
+
+            <form>
+              <p
+                id="qop-error-text"
+                class="text-error text-xs font-bold my-2 hidden"
+              >
+                Please add at least one part #.
+              </p>
+
+              <div class="flex gap-3 mb-4 relative">
+                <div class="form-control flex-1">
+                  <input
+                    id="quick-order-pad-item-1"
+                    type="text"
+                    name="productId_1"
+                    hx-get="/typeahead/quicksearch"
+                    hx-swap="innerHTML"
+                    hx-trigger="keyup changed delay:100ms, afterRequest"
+                    hx-target="#quickSearchResult1"
+                    class="input input-bordered w-full"
+                    placeholder="Part #"
+                    onkeydown="removeErrorText()"
+                    onfocus="showSuggestions(1, 5)"
+                    autocomplete="off"
+                    onblur="hideSuggestions(1)"
+                  />
+                  <div
+                    id="quickSearchResult1"
+                    class="absolute z-10 w-full mt-1 bg-base-100 shadow-lg rounded-box hidden"
+                  ></div>
+                </div>
+                <div class="form-control w-24">
+                  <input
+                    id="quick-order-pad-quantity-1"
+                    type="number"
+                    name="quantity_1"
+                    class="input input-bordered w-full"
+                    placeholder="Qty"
+                    min="1"
+                    max="99999"
+                    onkeydown="limitQopQuantity(event)"
+                    onfocus="hideAllSuggestions(5)"
+                    autocomplete="off"
+                  />
+                </div>
+                <input
+                  class="hidden"
+                  id="quick-order-pad-reference-1"
+                  type="text"
+                  name="referenceNumber_1"
+                />
+                <input
+                  class="hidden"
+                  id="quick-ordered-as-1"
+                  type="text"
+                  name="ordered-as_1"
+                />
+                <input
+                  class="hidden"
+                  id="quick-user-entered-item-no-1"
+                  type="text"
+                  name="user-entered-item-no_1"
+                />
+              </div>
+
+              <!-- Repeat for items 2-5 -->
+              <div class="flex gap-3 mb-4 relative">
+                <div class="form-control flex-1">
+                  <input
+                    id="quick-order-pad-item-2"
+                    type="text"
+                    name="productId_2"
+                    hx-get="/typeahead/quicksearch"
+                    hx-swap="innerHTML"
+                    hx-trigger="keyup changed delay:100ms, afterRequest"
+                    hx-target="#quickSearchResult2"
+                    class="input input-bordered w-full"
+                    placeholder="Part #"
+                    onkeydown="removeErrorText()"
+                    onfocus="showSuggestions(2, 5)"
+                    autocomplete="off"
+                    onblur="hideSuggestions(2)"
+                  />
+                  <div
+                    id="quickSearchResult2"
+                    class="absolute z-10 w-full mt-1 bg-base-100 shadow-lg rounded-box hidden"
+                  ></div>
+                </div>
+                <div class="form-control w-24">
+                  <input
+                    id="quick-order-pad-quantity-2"
+                    type="number"
+                    name="quantity_2"
+                    class="input input-bordered w-full"
+                    placeholder="Qty"
+                    min="1"
+                    max="99999"
+                    onkeydown="limitQopQuantity(event)"
+                    onfocus="hideAllSuggestions(5)"
+                    autocomplete="off"
+                  />
+                </div>
+                <input
+                  class="hidden"
+                  id="quick-order-pad-reference-2"
+                  type="text"
+                  name="referenceNumber_2"
+                />
+                <input
+                  class="hidden"
+                  id="quick-ordered-as-2"
+                  type="text"
+                  name="ordered-as_2"
+                />
+                <input
+                  class="hidden"
+                  id="quick-user-entered-item-no-2"
+                  type="text"
+                  name="user-entered-item-no_2"
+                />
+              </div>
+
+              <div class="flex gap-3 mb-4 relative">
+                <div class="form-control flex-1">
+                  <input
+                    id="quick-order-pad-item-3"
+                    type="text"
+                    name="productId_3"
+                    hx-get="/typeahead/quicksearch"
+                    hx-swap="innerHTML"
+                    hx-trigger="keyup changed delay:100ms, afterRequest"
+                    hx-target="#quickSearchResult3"
+                    class="input input-bordered w-full"
+                    placeholder="Part #"
+                    onkeydown="removeErrorText()"
+                    onfocus="showSuggestions(3, 5)"
+                    autocomplete="off"
+                    onblur="hideSuggestions(3)"
+                  />
+                  <div
+                    id="quickSearchResult3"
+                    class="absolute z-10 w-full mt-1 bg-base-100 shadow-lg rounded-box hidden"
+                  ></div>
+                </div>
+                <div class="form-control w-24">
+                  <input
+                    id="quick-order-pad-quantity-3"
+                    type="number"
+                    name="quantity_3"
+                    class="input input-bordered w-full"
+                    placeholder="Qty"
+                    min="1"
+                    max="99999"
+                    onkeydown="limitQopQuantity(event)"
+                    onfocus="hideAllSuggestions(5)"
+                    autocomplete="off"
+                  />
+                </div>
+                <input
+                  class="hidden"
+                  id="quick-order-pad-reference-3"
+                  type="text"
+                  name="referenceNumber_3"
+                />
+                <input
+                  class="hidden"
+                  id="quick-ordered-as-3"
+                  type="text"
+                  name="ordered-as_3"
+                />
+                <input
+                  class="hidden"
+                  id="quick-user-entered-item-no-3"
+                  type="text"
+                  name="user-entered-item-no_3"
+                />
+              </div>
+
+              <div class="flex gap-3 mb-4 relative">
+                <div class="form-control flex-1">
+                  <input
+                    id="quick-order-pad-item-4"
+                    type="text"
+                    name="productId_4"
+                    hx-get="/typeahead/quicksearch"
+                    hx-swap="innerHTML"
+                    hx-trigger="keyup changed delay:100ms, afterRequest"
+                    hx-target="#quickSearchResult4"
+                    class="input input-bordered w-full"
+                    placeholder="Part #"
+                    onkeydown="removeErrorText()"
+                    onfocus="showSuggestions(4, 5)"
+                    autocomplete="off"
+                    onblur="hideSuggestions(4)"
+                  />
+                  <div
+                    id="quickSearchResult4"
+                    class="absolute z-10 w-full mt-1 bg-base-100 shadow-lg rounded-box hidden"
+                  ></div>
+                </div>
+                <div class="form-control w-24">
+                  <input
+                    id="quick-order-pad-quantity-4"
+                    type="number"
+                    name="quantity_4"
+                    class="input input-bordered w-full"
+                    placeholder="Qty"
+                    min="1"
+                    max="99999"
+                    onkeydown="limitQopQuantity(event)"
+                    onfocus="hideAllSuggestions(5)"
+                    autocomplete="off"
+                  />
+                </div>
+                <input
+                  class="hidden"
+                  id="quick-order-pad-reference-4"
+                  type="text"
+                  name="referenceNumber_4"
+                />
+                <input
+                  class="hidden"
+                  id="quick-ordered-as-4"
+                  type="text"
+                  name="ordered-as_4"
+                />
+                <input
+                  class="hidden"
+                  id="quick-user-entered-item-no-4"
+                  type="text"
+                  name="user-entered-item-no_4"
+                />
+              </div>
+
+              <div class="flex gap-3 mb-6 relative">
+                <div class="form-control flex-1">
+                  <input
+                    id="quick-order-pad-item-5"
+                    type="text"
+                    name="productId_5"
+                    hx-get="/typeahead/quicksearch"
+                    hx-swap="innerHTML"
+                    hx-trigger="keyup changed delay:100ms, afterRequest"
+                    hx-target="#quickSearchResult5"
+                    class="input input-bordered w-full"
+                    placeholder="Part #"
+                    onkeydown="removeErrorText()"
+                    onfocus="showSuggestions(5, 5)"
+                    autocomplete="off"
+                    onblur="hideSuggestions(5)"
+                  />
+                  <div
+                    id="quickSearchResult5"
+                    class="absolute z-10 w-full mt-1 bg-base-100 shadow-lg rounded-box hidden"
+                  ></div>
+                </div>
+                <div class="form-control w-24">
+                  <input
+                    id="quick-order-pad-quantity-5"
+                    type="number"
+                    name="quantity_5"
+                    class="input input-bordered w-full"
+                    placeholder="Qty"
+                    min="1"
+                    max="99999"
+                    onkeydown="limitQopQuantity(event)"
+                    onfocus="hideAllSuggestions(5)"
+                    autocomplete="off"
+                  />
+                </div>
+                <input
+                  class="hidden"
+                  id="quick-order-pad-reference-5"
+                  type="text"
+                  name="referenceNumber_5"
+                />
+                <input
+                  class="hidden"
+                  id="quick-ordered-as-5"
+                  type="text"
+                  name="ordered-as_5"
+                />
+                <input
+                  class="hidden"
+                  id="quick-user-entered-item-no-5"
+                  type="text"
+                  name="user-entered-item-no_5"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary w-full mb-4"
+                onclick="quick_order_modal.close()"
+              >
+                Add to Cart
+              </button>
+
+              <div class="text-center">
+                <a href="#" class="link link-primary font-bold"
+                  >Large Order Pad</a
+                >
+              </div>
+            </form>
+          </div>
+        </dialog>
+
         <script>
           const mscSearch = document.getElementById("msc-search");
           const mscNav = document.getElementById("msc-nav");
