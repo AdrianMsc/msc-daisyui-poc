@@ -45,3 +45,27 @@ const backToMenu = () => {
   mscMenu.classList.remove("hidden");
   mscSubMenu.classList.add("hidden");
 };
+
+// DROPDOWN AUTOHIDE
+const dropdownCloseTimers = new WeakMap();
+document
+  .querySelectorAll(".navbar-start .menu.menu-horizontal > li > details")
+  .forEach((dropdown) => {
+    dropdown.addEventListener("toggle", () => {
+      // Clear any existing close timer
+      const existing = dropdownCloseTimers.get(dropdown);
+      if (existing) {
+        clearTimeout(existing);
+        dropdownCloseTimers.delete(dropdown);
+      }
+
+      if (dropdown.open) {
+        // Auto-close after 3 seconds
+        const id = setTimeout(() => {
+          dropdown.open = false;
+          dropdownCloseTimers.delete(dropdown);
+        }, 3000);
+        dropdownCloseTimers.set(dropdown, id);
+      }
+    });
+  });
