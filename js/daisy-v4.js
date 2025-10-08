@@ -62,9 +62,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const checkLogin = () => {
+  const token = localStorage.getItem("token");
+  const profileImg = document.getElementById("profile-img");
 
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".main-menu")) {
-    detailsElements.forEach((d) => d.removeAttribute("open"));
+  if (token) {
+    profileImg.src =
+      "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp";
+    // Mostrar loggedin, ocultar loggedout
+    document
+      .querySelectorAll(".loggedin")
+      .forEach((el) => el.classList.remove("hidden"));
+    document
+      .querySelectorAll(".loggedout")
+      .forEach((el) => el.classList.add("hidden"));
+  } else {
+    profileImg.src = "assets/profile.png";
+    document
+      .querySelectorAll(".loggedin")
+      .forEach((el) => el.classList.add("hidden"));
+    document
+      .querySelectorAll(".loggedout")
+      .forEach((el) => el.classList.remove("hidden"));
   }
-});
+};
+
+const closeDropdown = () => {
+  const active = document.activeElement;
+  if (active && typeof active.blur === "function") {
+    active.blur();
+  }
+};
+
+const login = () => {
+  localStorage.setItem("token", "true");
+  checkLogin();
+  closeDropdown();
+};
+
+const logout = () => {
+  localStorage.removeItem("token");
+  checkLogin();
+  closeDropdown();
+};
+
+// Ejecutar al cargar
+document.addEventListener("DOMContentLoaded", checkLogin);

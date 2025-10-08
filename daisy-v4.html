@@ -736,15 +736,17 @@
               >
                 <div class="w-10 rounded-full">
                   <img
+                    id="profile-img"
                     alt="Tailwind CSS Navbar component"
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    src="assets/profile.png"
                   />
                 </div>
               </div>
 
+              <!-- Menú para usuarios logueados -->
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                class="loggedin hidden menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 <li>
                   <a class="justify-between">
@@ -753,7 +755,15 @@
                   </a>
                 </li>
                 <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
+                <li onclick="logout()"><a>Logout</a></li>
+              </ul>
+
+              <!-- Menú para usuarios no logueados -->
+              <ul
+                tabindex="0"
+                class="loggedout menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li onclick="login()"><a>Login</a></li>
               </ul>
             </div>
           </div>
