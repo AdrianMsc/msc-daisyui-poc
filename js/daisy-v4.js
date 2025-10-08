@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 const checkLogin = () => {
   const token = localStorage.getItem("token");
   const profileImg = document.getElementById("profile-img");
