@@ -1,6 +1,6 @@
 const mscSearch = document.getElementById("msc-search");
 const mscNav = document.getElementById("msc-nav");
-const mscNavEnd = document.getElementById("msc-nav-end");
+const mscNavEnd = document.getElementById("msc-search-bar-end");
 
 const toggleSearchBar = () => {
   mscNav.classList.toggle("hidden");
@@ -61,4 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".main-menu")) {
+    detailsElements.forEach((d) => d.removeAttribute("open"));
+  }
 });
