@@ -46,26 +46,19 @@ const backToMenu = () => {
   mscSubMenu.classList.add("hidden");
 };
 
-// DROPDOWN AUTOHIDE
-const dropdownCloseTimers = new WeakMap();
-document
-  .querySelectorAll(".navbar-start .menu.menu-horizontal > li > details")
-  .forEach((dropdown) => {
-    dropdown.addEventListener("toggle", () => {
-      // Clear any existing close timer
-      const existing = dropdownCloseTimers.get(dropdown);
-      if (existing) {
-        clearTimeout(existing);
-        dropdownCloseTimers.delete(dropdown);
-      }
+document.addEventListener("DOMContentLoaded", () => {
+  const detailsElements = document.querySelectorAll(".main-menu details");
 
-      if (dropdown.open) {
-        // Auto-close after 3 seconds
-        const id = setTimeout(() => {
-          dropdown.open = false;
-          dropdownCloseTimers.delete(dropdown);
-        }, 3000);
-        dropdownCloseTimers.set(dropdown, id);
+  detailsElements.forEach((details) => {
+    details.addEventListener("toggle", () => {
+      if (details.open) {
+        // Cerrar todos los demás <details>
+        detailsElements.forEach((other) => {
+          if (other !== details && other.open) {
+            other.removeAttribute("open");
+          }
+        });
       }
     });
   });
+});
